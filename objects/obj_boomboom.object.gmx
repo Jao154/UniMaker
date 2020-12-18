@@ -130,10 +130,10 @@ if ready = 0
 
     //Use appropriate image index
     image_speed = 0
-    image_index = 0
-
+    image_index = 1
+    
     //Hop again later
-    alarm[2] = 150
+    alarm[10] = 50
 
 }
 </string>
@@ -161,8 +161,11 @@ if ready = 0
             <string>///Jump at Mario
 
 //Use appropriate image index
-image_speed = 0.15
+image_speed = 0
 image_index = 2
+
+//Reset state
+alarm[10] = 20
 
 //Move up
 vspeed = -3
@@ -176,9 +179,6 @@ or obj_mario.x &lt; x
     hspeed = -1
 else
     hspeed = 1  
-    
-//Reset state
-alarm[10] = 20
 </string>
           </argument>
         </arguments>
