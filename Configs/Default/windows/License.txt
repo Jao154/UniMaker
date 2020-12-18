@@ -1,0 +1,21 @@
+SUPER MARIO UNIMAKER
+Powered by: Super Mario 2D Universe
+Version: 1.0.0 BETA
+Mario Silva, 2DU Team.
+-------------
+Changelog: 
+*nothing*
+-------------
+Learn more about Super Mario 2D Univers in:
+http://sm2du.officialforum.net/
+https://www.facebook.com/2duofficial/
+-------------
+Sources:
+http://code.google.com/p/hello-mario-engine/
+http://gatetegaming.weebly.com/engines.html/
+http://www.mfgg.net/
+http://www.yoyogames.com/
+-------------
+The 'Super Mario™' franchise is a registered trademark of Nintendo®.
+This is a non-profit fan project.
+http://www.nintendo.com/
