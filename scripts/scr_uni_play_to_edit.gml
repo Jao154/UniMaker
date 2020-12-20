@@ -147,6 +147,7 @@ with(obj_icecoin) instance_destroy(); instance_activate_object(obj_uni_demo_79);
 with(obj_banzaibill) instance_destroy(); instance_activate_object(obj_uni_demo_80);
 with(obj_pokey) instance_destroy(); instance_activate_object(obj_uni_demo_81);
 with(obj_pplatform) instance_destroy(); instance_activate_object(obj_uni_demo_82);
+with(obj_poutline) instance_destroy(); instance_activate_object(obj_uni_demo_82_1);
 with(obj_wiggler) instance_destroy(); instance_activate_object(obj_uni_demo_83);
 with(obj_spike) instance_destroy(); instance_activate_object(obj_uni_demo_84);
 with(obj_hammerbro) instance_destroy(); instance_activate_object(obj_uni_demo_85); with(obj_brohammer) instance_destroy();

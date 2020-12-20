@@ -173,6 +173,7 @@ with(obj_uni_demo_79){visible = 0; instance_create(x,y,obj_icecoin);}
 with(obj_uni_demo_80){visible = 0; instance_create(x,y,obj_banzaibill);}
 with(obj_uni_demo_81){visible = 0; instance_create(x,y,obj_pokey);}
 with(obj_uni_demo_82){visible = 0; instance_create(x,y,obj_pplatform);}
+with(obj_uni_demo_82_1){visible = 0; instance_create(x,y,obj_poutline);}
 with(obj_uni_demo_83){visible = 0; instance_create(x,y,obj_wiggler);}
 with(obj_uni_demo_84){visible = 0; instance_create(x,y,obj_spike);}
 with(obj_uni_demo_85){visible = 0; instance_create(x,y,obj_hammerbro);}

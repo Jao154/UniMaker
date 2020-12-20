@@ -1102,6 +1102,10 @@ if(global.uni_editor_activity == true)
         case(obj_uni_startsing): global.uni_select_resource = obj_goalpole_block; break;
         case(obj_goalpole_block): global.uni_select_resource = obj_goalpole_castle; break;
         
+        //P-Block - P-Outline
+        case(obj_uni_demo_82): global.uni_select_resource = obj_uni_demo_82_1; break;
+        case(obj_uni_demo_82_1): global.uni_select_resource = obj_uni_demo_82; break;
+        
         //Hammer Bro - Fire Bro - Boomerang bro
         case(obj_uni_demo_85): global.uni_select_resource = obj_uni_demo_85_1; break;
         case(obj_uni_demo_85_1): global.uni_select_resource = obj_uni_demo_85_2; break;

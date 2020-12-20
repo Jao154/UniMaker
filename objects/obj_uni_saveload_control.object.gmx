@@ -167,11 +167,16 @@ objects[131] = obj_uni_demo_79;
 objects[132] = obj_uni_demo_80;
 objects[132] = obj_uni_demo_81;
 objects[133] = obj_uni_demo_82;
-objects[134] = obj_uni_demo_83;
-objects[135] = obj_uni_demo_84;
+objects[134] = obj_uni_demo_82_1;
+objects[135] = obj_uni_demo_83;
+objects[136] = obj_uni_demo_84;
+objects[137] = obj_uni_demo_85;
+objects[138] = obj_uni_demo_85_1;
+objects[139] = obj_uni_demo_85_2;
+objects[140] = obj_uni_demo_86;
 
 //Total para ser salvo
-total_objects = 136;
+total_objects = 141;
 </string>
           </argument>
         </arguments>

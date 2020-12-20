@@ -46,7 +46,7 @@ ready = 0
 alarm[10] = 2
 
 //Animate
-image_speed = 0.15;
+image_speed = 0.25;
 </string>
           </argument>
         </arguments>
@@ -203,15 +203,14 @@ else
             <kind>1</kind>
             <string>///Prepare to jump at Mario
 
-//Change sprite
-sprite_index = spr_boomboom_misc
+    //Change sprite
+    sprite_index = spr_boomboom_misc
 
-//Use appropriate image index
-image_speed = 0
-image_index = 1
+    //Use appropriate image index
+    image_speed = 0.2
 
-//Jump at Mario
-alarm[1] = 20
+    //Jump at Mario
+    alarm[1] = 40
 </string>
           </argument>
         </arguments>
@@ -337,11 +336,8 @@ hspeed = 0
 //Hurt sprite
 sprite_index = spr_boomboom_hurt
 
-image_speed = 0
-image_index = 2
-
 //Animate
-image_speed = 0.25
+image_speed = 0.15
 </string>
           </argument>
         </arguments>
