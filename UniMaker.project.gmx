@@ -2797,6 +2797,7 @@
           <sprite>sprites\spr_qblock</sprite>
           <sprite>sprites\spr_qblock_empty</sprite>
           <sprite>sprites\spr_qblock_spiked</sprite>
+          <sprite>sprites\spr_qblock_large</sprite>
         </sprites>
         <sprites name="Gray Blocks">
           <sprite>sprites\spr_flowerblock</sprite>
@@ -2807,6 +2808,7 @@
         <sprite>sprites\spr_flipblock</sprite>
         <sprite>sprites\spr_hardblock</sprite>
         <sprite>sprites\spr_brick</sprite>
+        <sprite>sprites\spr_brick_large</sprite>
         <sprite>sprites\spr_bluebrick</sprite>
         <sprite>sprites\spr_bluebrick_th</sprite>
         <sprite>sprites\spr_noteblock</sprite>
@@ -3361,6 +3363,8 @@
             <sprite>sprites\spr_uni_demo_85_2</sprite>
             <sprite>sprites\spr_uni_demo_86</sprite>
             <sprite>sprites\spr_uni_demo_87</sprite>
+            <sprite>sprites\spr_uni_demo_88</sprite>
+            <sprite>sprites\spr_uni_demo_88_1</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3641,8 +3645,10 @@
             <object>objects\obj_block_hidden_multicoin</object>
             <object>objects\obj_block_hidden_coinchain</object>
             <object>objects\obj_block_spiked</object>
+            <object>objects\obj_block_large</object>
           </objects>
           <object>objects\obj_brick</object>
+          <object>objects\obj_brick_large</object>
           <object>objects\obj_bluebrick</object>
           <object>objects\obj_flipblock</object>
           <object>objects\obj_noteblock</object>
@@ -4062,6 +4068,7 @@
                 <object>objects\obj_uni_layout_demoresources_86</object>
                 <object>objects\obj_uni_layout_demoresources_87</object>
                 <object>objects\obj_uni_layout_demoresources_88</object>
+                <object>objects\obj_uni_layout_demoresources_89</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4280,6 +4287,8 @@
             <object>objects\obj_uni_demo_85_2</object>
             <object>objects\obj_uni_demo_86</object>
             <object>objects\obj_uni_demo_87</object>
+            <object>objects\obj_uni_demo_88</object>
+            <object>objects\obj_uni_demo_88_1</object>
           </objects>
           <objects name="NEW">
             <object>objects\obj_uni_demo2_bgo1</object>
