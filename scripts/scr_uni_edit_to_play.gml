@@ -272,35 +272,37 @@ with(obj_uni_demo_9){
         case(23): with(instance_create(x,y,obj_block_coinchain)){sprite_index = spr_brick;} break;                     //23 - Coin Chain
     }
 }
-/*with(obj_uni_demo_10){
+
+
+with(obj_uni_demo_87){
     visible = 0;
     switch(item){
-        case(0): instance_create(x,y,obj_flipblock) break;                                                                 //0 - Coin
-        case(1): with(instance_create(x,y,obj_block_multicoin)){sprite_index = spr_flipblock;} break;                      //1 - Multi Coin
-        case(2): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_big;;} break;              //2 - Super Mushroom
-        case(3): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_fire;} break;              //3 - Fire Flower 
-        case(4): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_hammer;} break;            //4 - Hammer Flower
-        case(5): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_leaf;} break;           //5 - Super Leaf
-        case(6): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_super;} break;             //6 - Super Ball Flower
-        case(7): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_shell;} break;             //7 - Blue Shell
-        case(8): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_bee;} break;               //8 - Bee Mushroom
-        case(9): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_ice;} break;               //9 - Ice Flower
-        case(10): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_boomerang;} break;        //10 - Boomerang Flower
-        case(11): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_propeller;} break;        //11 - Propeller Mushroom
-        case(12): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_poison;} break;           //12 - Poison Mushroom
-        case(13): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_star;} break;             //13 - Superstar
-        case(14): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_1up;} break;              //14 - 1UP Mushroom
-        case(15): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_3up;} break;              //15 - 3UP Moon
-        case(16): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_greenyoshi;} break;       //16 - Yoshi Egg
-        case(17): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_key;} break;              //17 - Key
-        case(18): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_spring;} break;           //18 - Spring
-        case(19): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_pswitch;} break;          //19 - P-Switch
-        case(20): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_beanstalk;} break;        //20 - Vine 
-        case(21): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
-        case(22): with(instance_create(x,y,obj_block)){sprite_index = spr_flipblock; sprout = cs_propellerblock;} break;   //22 - Propeller Block
-        case(23): with(instance_create(x,y,obj_block_coinchain)){sprite_index = spr_flipblock;} break;                     //23 - Coin Chain
+        case(0): instance_create(x,y,obj_block_spiked) break;                                       //0 - Coin
+        case(1): instance_create(x,y,obj_block_multicoin) break;                             //1 - Multi Coin
+        case(2): with(instance_create(x,y,obj_block_spiked)){sprout = cs_big;} break;               //2 - Super Mushroom
+        case(3): with(instance_create(x,y,obj_block_spiked)){sprout = cs_fire;} break;              //3 - Fire Flower 
+        case(4): with(instance_create(x,y,obj_block_spiked)){sprout = cs_hammer;} break;            //4 - Hammer Flower
+        case(5): with(instance_create(x,y,obj_block_spiked)){sprout = cs_leaf;} break;           //5 - Super Leaf
+        case(6): with(instance_create(x,y,obj_block_spiked)){sprout = cs_super;} break;             //6 - Super Ball Flower
+        case(7): with(instance_create(x,y,obj_block_spiked)){sprout = cs_shell;} break;             //7 - Blue Shell
+        case(8): with(instance_create(x,y,obj_block_spiked)){sprout = cs_bee;} break;               //8 - Bee Mushroom
+        case(9): with(instance_create(x,y,obj_block_spiked)){sprout = cs_ice;} break;               //9 - Ice Flower
+        case(10): with(instance_create(x,y,obj_block_spiked)){sprout = cs_boomerang;} break;        //10 - Boomerang Flower
+        case(11): with(instance_create(x,y,obj_block_spiked)){sprout = cs_propeller;} break;        //11 - Propeller Mushroom
+        case(12): with(instance_create(x,y,obj_block_spiked)){sprout = cs_poison;} break;           //12 - Poison Mushroom
+        case(13): with(instance_create(x,y,obj_block_spiked)){sprout = cs_star;} break;             //13 - Superstar
+        case(14): with(instance_create(x,y,obj_block_spiked)){sprout = cs_1up;} break;              //14 - 1UP Mushroom
+        case(15): with(instance_create(x,y,obj_block_spiked)){sprout = cs_3up;} break;              //15 - 3UP Moon
+        case(16): with(instance_create(x,y,obj_block_spiked)){sprout = cs_greenyoshi;} break;       //16 - Yoshi Egg
+        case(17): with(instance_create(x,y,obj_block_spiked)){sprout = cs_key;} break;              //17 - Key
+        case(18): with(instance_create(x,y,obj_block_spiked)){sprout = cs_spring;} break;           //18 - Spring
+        case(19): with(instance_create(x,y,obj_block_spiked)){sprout = cs_pswitch;} break;          //19 - P-Switch
+        case(20): with(instance_create(x,y,obj_block_spiked)){sprout = cs_beanstalk;} break;        //20 - Vine 
+        case(21): with(instance_create(x,y,obj_block_spiked)){sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
+        case(22): with(instance_create(x,y,obj_block_spiked)){sprout = cs_propellerblock;} break;   //22 - Propeller Block
+        case(23): instance_create(x,y,obj_block_hidden_coinchain) break;                            //23 - Coin Chain
     }
-}*/
+}
 
 //UniMaker 1.S
 with(obj_uni_demo_2_2){visible = 0; event_user(3)}

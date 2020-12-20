@@ -154,6 +154,7 @@ with(obj_hammerbro) instance_destroy(); instance_activate_object(obj_uni_demo_85
 with(obj_firebro) instance_destroy(); instance_activate_object(obj_uni_demo_85_1); with(obj_brofire) instance_destroy();
 with(obj_boomerangbro) instance_destroy(); instance_activate_object(obj_uni_demo_85_2); with(obj_boomerang) instance_destroy();
 with(obj_boomboom) instance_destroy(); instance_activate_object(obj_uni_demo_86);
+with(obj_block_spiked) instance_destroy(); instance_activate_object(obj_uni_demo_87);
 
 //------------ Derivados ------------
 //Player

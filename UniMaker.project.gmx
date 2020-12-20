@@ -2796,6 +2796,7 @@
         <sprites name="Item Blocks">
           <sprite>sprites\spr_qblock</sprite>
           <sprite>sprites\spr_qblock_empty</sprite>
+          <sprite>sprites\spr_qblock_spiked</sprite>
         </sprites>
         <sprites name="Gray Blocks">
           <sprite>sprites\spr_flowerblock</sprite>
@@ -3359,6 +3360,7 @@
             <sprite>sprites\spr_uni_demo_85_1</sprite>
             <sprite>sprites\spr_uni_demo_85_2</sprite>
             <sprite>sprites\spr_uni_demo_86</sprite>
+            <sprite>sprites\spr_uni_demo_87</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3638,6 +3640,7 @@
             <object>objects\obj_block_hidden</object>
             <object>objects\obj_block_hidden_multicoin</object>
             <object>objects\obj_block_hidden_coinchain</object>
+            <object>objects\obj_block_spiked</object>
           </objects>
           <object>objects\obj_brick</object>
           <object>objects\obj_bluebrick</object>
@@ -4058,6 +4061,7 @@
                 <object>objects\obj_uni_layout_demoresources_85</object>
                 <object>objects\obj_uni_layout_demoresources_86</object>
                 <object>objects\obj_uni_layout_demoresources_87</object>
+                <object>objects\obj_uni_layout_demoresources_88</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4275,6 +4279,7 @@
             <object>objects\obj_uni_demo_85_1</object>
             <object>objects\obj_uni_demo_85_2</object>
             <object>objects\obj_uni_demo_86</object>
+            <object>objects\obj_uni_demo_87</object>
           </objects>
           <objects name="NEW">
             <object>objects\obj_uni_demo2_bgo1</object>

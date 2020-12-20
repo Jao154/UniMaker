@@ -1110,6 +1110,7 @@ if(global.uni_editor_activity == true)
         case(obj_uni_demo_85): global.uni_select_resource = obj_uni_demo_85_1; break;
         case(obj_uni_demo_85_1): global.uni_select_resource = obj_uni_demo_85_2; break;
         case(obj_uni_demo_85_2): global.uni_select_resource = obj_uni_demo_85; break; 
+        
     }
     if(global.uni_select_resource != global.uni_select_resource)
         audio_playstop_sound(snd_magic,0,false);

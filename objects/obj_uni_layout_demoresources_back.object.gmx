@@ -217,6 +217,7 @@ instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_84)
 instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_85);
 instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_86);
 instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_87);
+instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_88);
 </string>
           </argument>
         </arguments>
@@ -327,6 +328,8 @@ with (obj_uni_layout_demoresources_84) instance_destroy();
 with (obj_uni_layout_demoresources_85) instance_destroy();
 with (obj_uni_layout_demoresources_86) instance_destroy();
 with (obj_uni_layout_demoresources_87) instance_destroy();
+with (obj_uni_layout_demoresources_88) instance_destroy();
+
 //Destruir "Close"
 with (obj_uni_layout_demoresources_close)instance_destroy();
 //Se destruir

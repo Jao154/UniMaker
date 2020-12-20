@@ -174,9 +174,10 @@ objects[137] = obj_uni_demo_85;
 objects[138] = obj_uni_demo_85_1;
 objects[139] = obj_uni_demo_85_2;
 objects[140] = obj_uni_demo_86;
+objects[141] = obj_uni_demo_87;
 
 //Total para ser salvo
-total_objects = 141;
+total_objects = 142;
 </string>
           </argument>
         </arguments>
