@@ -1115,6 +1115,12 @@ if(global.uni_editor_activity == true)
         case(obj_uni_demo_88): global.uni_select_resource = obj_uni_demo_88_1; break;
         case(obj_uni_demo_88_1): global.uni_select_resource = obj_uni_demo_88; break;
         
+        //10 Coin - 30 Coin - 50 Coin - Yoshi Coin
+        case(obj_uni_demo_89_1): global.uni_select_resource = obj_uni_demo_89_2; break;
+        case(obj_uni_demo_89_2): global.uni_select_resource = obj_uni_demo_89_3; break;
+        case(obj_uni_demo_89_3): global.uni_select_resource = obj_uni_demo_89_4; break;
+        case(obj_uni_demo_89_4): global.uni_select_resource = obj_uni_demo_89_1; break;
+        
     }
     if(global.uni_select_resource != global.uni_select_resource)
         audio_playstop_sound(snd_magic,0,false);

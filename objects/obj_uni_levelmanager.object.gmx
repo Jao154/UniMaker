@@ -54,7 +54,7 @@ alarm[6] = 3
 switchon = 0
 
 //Enable P-Meter
-alarm[7] = 15
+alarm[7] = 10
 </string>
           </argument>
         </arguments>
@@ -341,7 +341,7 @@ if global.pmeter = 6
 
 //Otherwise, continue the loop
 else
-    alarm[7] = 15
+    alarm[7] = 10
 </string>
           </argument>
         </arguments>

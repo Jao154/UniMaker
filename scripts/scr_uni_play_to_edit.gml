@@ -34,7 +34,14 @@ with(obj_cinder) instance_destroy();
 with(obj_sandstorm) instance_destroy();
 
 with(obj_veggiecoin) instance_destroy();
+with(obj_10coinJ) instance_destroy();
+with(obj_30coinJ) instance_destroy();
+with(obj_50coinJ) instance_destroy();
+with(obj_yoshicoinJ) instance_destroy();
 with(obj_multiveggiecoin) instance_destroy();
+with(obj_10coinG) instance_destroy();
+with(obj_30coinG) instance_destroy();
+with(obj_50coinG) instance_destroy();
 with(obj_starman_trail) instance_destroy();
 with(obj_superball_trail) instance_destroy();
 with(obj_uni_start) instance_destroy();
@@ -157,6 +164,10 @@ with(obj_boomboom) instance_destroy(); instance_activate_object(obj_uni_demo_86)
 with(obj_block_spiked) instance_destroy(); instance_activate_object(obj_uni_demo_87);
 with(obj_block_large) instance_destroy(); instance_activate_object(obj_uni_demo_88);
 with(obj_brick_large) instance_destroy(); instance_activate_object(obj_uni_demo_88_1);
+with(obj_10coin) instance_destroy(); instance_activate_object(obj_uni_demo_89_1);
+with(obj_30coin) instance_destroy(); instance_activate_object(obj_uni_demo_89_2);
+with(obj_50coin) instance_destroy(); instance_activate_object(obj_uni_demo_89_3);
+with(obj_yoshicoin) instance_destroy(); instance_activate_object(obj_uni_demo_89_4);
 
 //------------ Derivados ------------
 //Player

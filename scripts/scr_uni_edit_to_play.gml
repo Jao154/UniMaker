@@ -181,6 +181,10 @@ with(obj_uni_demo_85_1){visible = 0; instance_create(x,y,obj_firebro);}
 with(obj_uni_demo_85_2){visible = 0; instance_create(x,y,obj_boomerangbro);}
 with(obj_uni_demo_86){visible = 0; instance_create(x,y,obj_boomboom);}
 with(obj_uni_demo_88_1){visible = 0; instance_create(x,y,obj_brick_large);}
+with(obj_uni_demo_89_1){visible = 0; instance_create(x,y,obj_10coin);}
+with(obj_uni_demo_89_2){visible = 0; instance_create(x,y,obj_30coin);}
+with(obj_uni_demo_89_3){visible = 0; instance_create(x,y,obj_50coin);}
+with(obj_uni_demo_89_4){visible = 0; instance_create(x,y,obj_yoshicoin);}
 
 //------------ Objetos especiais ------------
 with(obj_uni_demo_8_1){

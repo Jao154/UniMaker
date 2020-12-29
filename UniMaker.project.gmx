@@ -2554,6 +2554,7 @@
       <sound>sound\snd_yoshi</sound>
       <sound>sound\snd_yoshi_happy</sound>
       <sound>sound\snd_yoshi_hurt</sound>
+      <sound>sound\snd_yoshicoin</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -2986,6 +2987,10 @@
         </sprites>
         <sprites name="Collectables">
           <sprite>sprites\spr_coin</sprite>
+          <sprite>sprites\spr_10coin</sprite>
+          <sprite>sprites\spr_30coin</sprite>
+          <sprite>sprites\spr_50coin</sprite>
+          <sprite>sprites\spr_yoshicoin</sprite>
           <sprite>sprites\spr_pcoin</sprite>
           <sprite>sprites\spr_spring</sprite>
           <sprite>sprites\spr_spring_super</sprite>
@@ -3365,6 +3370,10 @@
             <sprite>sprites\spr_uni_demo_87</sprite>
             <sprite>sprites\spr_uni_demo_88</sprite>
             <sprite>sprites\spr_uni_demo_88_1</sprite>
+            <sprite>sprites\spr_uni_demo_89_1</sprite>
+            <sprite>sprites\spr_uni_demo_89_2</sprite>
+            <sprite>sprites\spr_uni_demo_89_3</sprite>
+            <sprite>sprites\spr_uni_demo_89_4</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3592,6 +3601,13 @@
         <objects name="Effect">
           <object>objects\obj_powkiller</object>
           <object>objects\obj_veggiecoin</object>
+          <object>objects\obj_10coinG</object>
+          <object>objects\obj_10coinJ</object>
+          <object>objects\obj_30coinJ</object>
+          <object>objects\obj_30coinG</object>
+          <object>objects\obj_50coinJ</object>
+          <object>objects\obj_50coinG</object>
+          <object>objects\obj_yoshicoinJ</object>
           <object>objects\obj_blockcoin</object>
           <object>objects\obj_beanstalk</object>
           <object>objects\obj_vine</object>
@@ -3679,6 +3695,10 @@
         <object>objects\obj_expandplatform_v</object>
         <object>objects\obj_arrowplatform</object>
         <object>objects\obj_coin</object>
+        <object>objects\obj_10coin</object>
+        <object>objects\obj_30coin</object>
+        <object>objects\obj_50coin</object>
+        <object>objects\obj_yoshicoin</object>
         <object>objects\obj_pcoin</object>
         <object>objects\obj_multiveggiecoin</object>
         <object>objects\obj_spring</object>
@@ -4069,6 +4089,7 @@
                 <object>objects\obj_uni_layout_demoresources_87</object>
                 <object>objects\obj_uni_layout_demoresources_88</object>
                 <object>objects\obj_uni_layout_demoresources_89</object>
+                <object>objects\obj_uni_layout_demoresources_90</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4289,6 +4310,10 @@
             <object>objects\obj_uni_demo_87</object>
             <object>objects\obj_uni_demo_88</object>
             <object>objects\obj_uni_demo_88_1</object>
+            <object>objects\obj_uni_demo_89_1</object>
+            <object>objects\obj_uni_demo_89_2</object>
+            <object>objects\obj_uni_demo_89_3</object>
+            <object>objects\obj_uni_demo_89_4</object>
           </objects>
           <objects name="NEW">
             <object>objects\obj_uni_demo2_bgo1</object>
