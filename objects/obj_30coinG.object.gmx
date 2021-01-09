@@ -296,7 +296,7 @@ if vspeed &gt;= 0
     audio_playstop_sound(snd_coin,0,0)
 
         //Increment coins
-    global.coins++
+    global.coins+=30;
     
     
     //Get 100 points

@@ -296,8 +296,8 @@ if vspeed &gt;= 0
     audio_playstop_sound(snd_coin,0,0)
 
         //Increment coins
-    global.coins++
-    
+    global.coins+=10;
+
     
     //Get 100 points
     with instance_create(x,y,obj_score) {event_user(0) visible = 0;}

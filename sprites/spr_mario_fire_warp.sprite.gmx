@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>16</width>
+  <width>15</width>
   <height>28</height>
   <frames>
     <frame index="0">images\spr_mario_fire_warp_0.png</frame>
