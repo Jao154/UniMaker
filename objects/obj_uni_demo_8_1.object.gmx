@@ -101,6 +101,12 @@ if(drag == false)
     else if(other.object_index == obj_uni_demo_22){item = 22; audio_playstop_sound(snd_uni_object_putblock,0,false); with(other) instance_destroy();}
     //23 - Blue Coin
     else if(other.object_index == obj_uni_demo_17_2){item = 23; audio_playstop_sound(snd_uni_object_putblock,0,false); with(other) instance_destroy();}   
+    //24 - Red Yoshi EGG
+    else if(other.object_index == obj_uni_demo_19_2){item = 24; audio_playstop_sound(snd_uni_object_putblock,0,false); with(other) instance_destroy();}
+    //25 - Yellow Yoshi EGG
+    else if(other.object_index == obj_uni_demo_19_3){item = 25; audio_playstop_sound(snd_uni_object_putblock,0,false); with(other) instance_destroy();}
+    //26 - Blue Yoshi EGG
+    else if(other.object_index == obj_uni_demo_19_4){item = 26; audio_playstop_sound(snd_uni_object_putblock,0,false); with(other) instance_destroy();}
 };
 </string>
           </argument>

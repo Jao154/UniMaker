@@ -22,7 +22,10 @@ switch argument0
     case spr_blueshell: return cs_shell
     case spr_propellershroom: return cs_propeller
     case spr_boomerangflower: return cs_boomerang
-    case spr_hatch: return cs_greenyoshi
+    case cs_greenyoshi: return spr_hatch
+    case cs_redyoshi: return spr_hatch_r
+    case cs_yellowyoshi: return spr_hatch_y
+    case cs_blueyoshi: return spr_hatch_b
     case spr_kuriboshoe: return cs_kuriboshoe
     case spr_1up: return cs_1up
     case spr_3upmoon: return cs_3up

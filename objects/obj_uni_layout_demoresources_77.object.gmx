@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///76 - Question
+            <string>///77 - Goal
 image_speed = 0;
 image_index = 0;
 </string>
@@ -52,7 +52,7 @@ image_index = 0;
             <kind>1</kind>
             <string>///Posição
 x = view_xview[0]+150;
-y = view_yview[0]+185;
+y = view_yview[0]+163;
 </string>
           </argument>
         </arguments>
@@ -76,7 +76,7 @@ y = view_yview[0]+185;
           <argument>
             <kind>1</kind>
             <string>///Selecionar
-global.uni_select_resource = obj_uni_flagpole;
+global.uni_select_resource = obj_uni_goalgate;
 //Fechar
 with(obj_uni_layout_demoresources_close)
     event_user(0);

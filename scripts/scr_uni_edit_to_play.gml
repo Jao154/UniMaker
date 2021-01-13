@@ -62,6 +62,7 @@ if(global.uni_level_style == 4)
 }
 with(obj_uni_startsing){visible = 0; event_user(3); instance_create(x,y,obj_uni_start);}
 with(obj_uni_flagpole){visible = 0; instance_create(x,y,obj_flagpole);}
+with(obj_uni_goalgate){visible = 0; instance_create(x,y,obj_smw_goalgate);}
 //------------ Objetos gerais ------------
 with(obj_uni_ground){visible = 0; event_user(3)}
 with(obj_uni_demo_2){visible = 0; event_user(3)}
@@ -85,7 +86,10 @@ with(obj_uni_demo_16){visible = 0; instance_create(x,y,obj_onoffplatform);}
 with(obj_uni_demo_17_1){visible = 0; instance_create(x,y,obj_coin);}
 with(obj_uni_demo_17_2){visible = 0; instance_create(x,y,obj_pcoin);}
 with(obj_uni_demo_18_1){visible = 0; instance_create(x,y,obj_pswitch);}
-with(obj_uni_demo_19){visible = 0; instance_create(x,y,obj_hatch);}
+with(obj_uni_demo_19){with(instance_create(x,y,obj_hatch)){sprite_index = spr_hatch}; visible = false;};
+with(obj_uni_demo_19_2){with(instance_create(x,y,obj_hatch)){sprite_index = spr_hatch_r}; visible = false;};
+with(obj_uni_demo_19_3){with(instance_create(x,y,obj_hatch)){sprite_index = spr_hatch_y}; visible = false;};
+with(obj_uni_demo_19_4){with(instance_create(x,y,obj_hatch)){sprite_index = spr_hatch_b}; visible = false;};
 with(obj_uni_demo_20){visible = 0; instance_create(x,y,obj_getshoe);}
 with(obj_uni_demo_21){visible = 0; instance_create(x,y,obj_poison);}
 with(obj_uni_demo_22){visible = 0; instance_create(x,y,obj_1up);}
@@ -185,6 +189,24 @@ with(obj_uni_demo_89_1){visible = 0; instance_create(x,y,obj_10coin);}
 with(obj_uni_demo_89_2){visible = 0; instance_create(x,y,obj_30coin);}
 with(obj_uni_demo_89_3){visible = 0; instance_create(x,y,obj_50coin);}
 with(obj_uni_demo_89_4){visible = 0; instance_create(x,y,obj_yoshicoin);}
+with(obj_uni_demo_90_1){visible = 0; instance_create(x,y,obj_10clock);}
+with(obj_uni_demo_90_2){visible = 0; instance_create(x,y,obj_100clock);}
+with(obj_uni_demo_91_1){visible = 0; instance_create(x,y,obj_n10clock);}
+with(obj_uni_demo_91_2){visible = 0; instance_create(x,y,obj_n100clock);}
+with(obj_uni_demo_92_1){visible = 0; instance_create(x,y,obj_muncher_up);}
+with(obj_uni_demo_92_2){visible = 0; instance_create(x,y,obj_muncher_down);}
+with(obj_uni_demo_92_3){visible = 0; instance_create(x,y,obj_muncher_right);}
+with(obj_uni_demo_92_4){visible = 0; instance_create(x,y,obj_muncher_left);}
+
+//Portas
+with(obj_uni_demo_item_93_1_1){visible = 0; instance_create(x,y,obj_door_1_1);}
+with(obj_uni_demo_item_93_1_2){visible = 0; instance_create(x,y,obj_door_1_2);}
+with(obj_uni_demo_item_93_2_1){visible = 0; instance_create(x,y,obj_door_2_1);}
+with(obj_uni_demo_item_93_2_2){visible = 0; instance_create(x,y,obj_door_2_2);}
+with(obj_uni_demo_item_93_3_1){visible = 0; instance_create(x,y,obj_door_3_1);}
+with(obj_uni_demo_item_93_3_2){visible = 0; instance_create(x,y,obj_door_3_2);}
+with(obj_uni_demo_item_93_4_1){visible = 0; instance_create(x,y,obj_door_4_1);}
+with(obj_uni_demo_item_93_4_2){visible = 0; instance_create(x,y,obj_door_4_2);}
 
 //------------ Objetos especiais ------------
 with(obj_uni_demo_8_1){
@@ -214,6 +236,9 @@ with(obj_uni_demo_8_1){
         case(21): with(instance_create(x,y,obj_block)){sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
         case(22): with(instance_create(x,y,obj_block)){sprout = cs_propellerblock;} break;   //22 - Propeller Block
         case(23): instance_create(x,y,obj_block_coinchain) break;                            //23 - Coin Chain
+        case(24): with(instance_create(x,y,obj_block)){sprout = cs_redyoshi;} break;       //16 - Yoshi Egg
+        case(25): with(instance_create(x,y,obj_block)){sprout = cs_yellowyoshi;} break;       //16 - Yoshi Egg
+        case(26): with(instance_create(x,y,obj_block)){sprout = cs_blueyoshi;} break;       //16 - Yoshi Egg
         /*case(23): with(instance_create(x,y,obj_block)){sprout = cs_;} break;        //23 - SMB Mushroom
         case(24): with(instance_create(x,y,obj_block)){sprout = cs_;} break;        //24 - SMB3 Mushroom
         case(25): with(instance_create(x,y,obj_block)){sprout = cs_;} break;        //25 - SMW Mushroom*/
@@ -246,6 +271,9 @@ with(obj_uni_demo_8_2){
         case(21): with(instance_create(x,y,obj_block_hidden)){sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
         case(22): with(instance_create(x,y,obj_block_hidden)){sprout = cs_propellerblock;} break;   //22 - Propeller Block
         case(23): instance_create(x,y,obj_block_hidden_coinchain) break;                            //23 - Coin Chain
+        case(24): with(instance_create(x,y,obj_block_hidden)){sprout = cs_redyoshi;} break;       //16 - Yoshi Egg
+        case(25): with(instance_create(x,y,obj_block_hidden)){sprout = cs_yellowyoshi;} break;       //16 - Yoshi Egg
+        case(26): with(instance_create(x,y,obj_block_hidden)){sprout = cs_blueyoshi;} break;       //16 - Yoshi Egg
     }
 }
 with(obj_uni_demo_9){
@@ -275,6 +303,9 @@ with(obj_uni_demo_9){
         case(21): with(instance_create(x,y,obj_block)){sprite_index = spr_brick; sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
         case(22): with(instance_create(x,y,obj_block)){sprite_index = spr_brick; sprout = cs_propellerblock;} break;   //22 - Propeller Block
         case(23): with(instance_create(x,y,obj_block_coinchain)){sprite_index = spr_brick;} break;                     //23 - Coin Chain
+        case(24): with(instance_create(x,y,obj_block)){sprite_index = spr_brick; sprout = cs_redyoshi;} break;       //16 - Yoshi Egg
+        case(25): with(instance_create(x,y,obj_block)){sprite_index = spr_brick; sprout = cs_yellowyoshi;} break;       //16 - Yoshi Egg
+        case(26): with(instance_create(x,y,obj_block)){sprite_index = spr_brick; sprout = cs_blueyoshi;} break;       //16 - Yoshi Egg
     }
 }
 
@@ -306,6 +337,9 @@ with(obj_uni_demo_87){
         case(21): with(instance_create(x,y,obj_block_spiked)){sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
         case(22): with(instance_create(x,y,obj_block_spiked)){sprout = cs_propellerblock;} break;   //22 - Propeller Block
         case(23): instance_create(x,y,obj_block_hidden_coinchain) break;                            //23 - Coin Chain
+        case(24): with(instance_create(x,y,obj_block_spiked)){sprout = cs_redyoshi;} break;       //16 - Yoshi Egg
+        case(25): with(instance_create(x,y,obj_block_spiked)){sprout = cs_yellowyoshi;} break;       //16 - Yoshi Egg
+        case(26): with(instance_create(x,y,obj_block_spiked)){sprout = cs_blueyoshi;} break;       //16 - Yoshi Egg
     }
 }
 
@@ -336,6 +370,9 @@ with(obj_uni_demo_88){
         case(21): with(instance_create(x,y,obj_block_large)){sprout = cs_kuriboshoe;} break;       //21 - Goomba Shoe
         case(22): with(instance_create(x,y,obj_block_large)){sprout = cs_propellerblock;} break;   //22 - Propeller Block
         case(23): instance_create(x,y,obj_block_hidden_coinchain) break;                            //23 - Coin Chain
+        case(24): with(instance_create(x,y,obj_block_large)){sprout = cs_redyoshi;} break;       //16 - Yoshi Egg
+        case(25): with(instance_create(x,y,obj_block_large)){sprout = cs_yellowyoshi;} break;       //16 - Yoshi Egg
+        case(26): with(instance_create(x,y,obj_block_large)){sprout = cs_blueyoshi;} break;       //16 - Yoshi Egg
     }
 }
 

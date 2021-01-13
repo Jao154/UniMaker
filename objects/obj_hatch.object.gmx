@@ -143,7 +143,7 @@ with instance_create(x+8,y,obj_shard)
           <argument>
             <kind>1</kind>
             <string>///Finish hatching
-if(image_speed != 0){
+
 //Change sprite to lick sprite
 if sprite_index = spr_hatch
     sprite_index = spr_yoshi_lick
@@ -166,7 +166,6 @@ y-=16
 
 //Become an abandoned Yoshi
 alarm[1] = 10
-};
 </string>
           </argument>
         </arguments>

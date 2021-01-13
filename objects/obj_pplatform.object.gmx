@@ -93,7 +93,7 @@ if sprite_index = spr_pplatform
 {
 
     //Use the on sprite
-    sprite_index = spr_poutline
+    sprite_index = spr_ppoutline
     
     //Destroy the solid
     with mysolid instance_destroy()

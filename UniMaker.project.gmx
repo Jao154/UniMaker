@@ -2784,13 +2784,14 @@
         <sprite>sprites\spr_viewblock_em</sprite>
         <sprite>sprites\spr_onoffblock</sprite>
         <sprite>sprites\spr_onoffplatform</sprite>
+        <sprite>sprites\spr_poutline</sprite>
         <sprite>sprites\spr_shard</sprite>
         <sprite>sprites\spr_shard_th</sprite>
         <sprite>sprites\spr_shard_g</sprite>
         <sprite>sprites\spr_shard_y</sprite>
         <sprite>sprites\spr_beanstalk</sprite>
         <sprite>sprites\spr_vine</sprite>
-        <sprite>sprites\spr_poutline</sprite>
+        <sprite>sprites\spr_ppoutline</sprite>
         <sprite>sprites\spr_pplatform</sprite>
       </sprites>
       <sprites name="Enemies">
@@ -2831,6 +2832,10 @@
           <sprite>sprites\spr_swooper_fly</sprite>
           <sprite>sprites\spr_spiketop</sprite>
           <sprite>sprites\spr_spiketop_turn</sprite>
+          <sprite>sprites\spr_muncher_up</sprite>
+          <sprite>sprites\spr_muncher_down</sprite>
+          <sprite>sprites\spr_muncher_right</sprite>
+          <sprite>sprites\spr_muncher_left</sprite>
         </sprites>
         <sprites name="Water">
           <sprite>sprites\spr_cheepcheep</sprite>
@@ -2919,11 +2924,26 @@
         <sprites name="Powerups">
           <sprites name="Yoshi">
             <sprite>sprites\spr_hatch</sprite>
+            <sprite>sprites\spr_hatch_r</sprite>
+            <sprite>sprites\spr_hatch_y</sprite>
+            <sprite>sprites\spr_hatch_b</sprite>
             <sprite>sprites\spr_eggbits</sprite>
             <sprite>sprites\spr_yoshi_walk</sprite>
+            <sprite>sprites\spr_yoshi_walk_r</sprite>
+            <sprite>sprites\spr_yoshi_walk_y</sprite>
+            <sprite>sprites\spr_yoshi_walk_b</sprite>
             <sprite>sprites\spr_yoshi_jump</sprite>
+            <sprite>sprites\spr_yoshi_jump_r</sprite>
+            <sprite>sprites\spr_yoshi_jump_y</sprite>
+            <sprite>sprites\spr_yoshi_jump_b</sprite>
             <sprite>sprites\spr_yoshi_hold</sprite>
+            <sprite>sprites\spr_yoshi_hold_r</sprite>
+            <sprite>sprites\spr_yoshi_hold_y</sprite>
+            <sprite>sprites\spr_yoshi_hold_b</sprite>
             <sprite>sprites\spr_yoshi_lick</sprite>
+            <sprite>sprites\spr_yoshi_lick_r</sprite>
+            <sprite>sprites\spr_yoshi_lick_y</sprite>
+            <sprite>sprites\spr_yoshi_lick_b</sprite>
             <sprite>sprites\spr_tongue</sprite>
             <sprite>sprites\spr_yoshifire</sprite>
             <sprite>sprites\spr_wing</sprite>
@@ -2962,6 +2982,10 @@
           <sprite>sprites\spr_propellerblock</sprite>
           <sprite>sprites\spr_3upmoon</sprite>
           <sprite>sprites\spr_icecoin</sprite>
+          <sprite>sprites\spr_10clock</sprite>
+          <sprite>sprites\spr_n10clock</sprite>
+          <sprite>sprites\spr_100clock</sprite>
+          <sprite>sprites\spr_n100clock</sprite>
         </sprites>
         <sprites name="Interactive">
           <sprite>sprites\spr_pswitch</sprite>
@@ -3065,6 +3089,12 @@
         <sprite>sprites\spr_lvllava</sprite>
         <sprite>sprites\spr_lvlpoison</sprite>
         <sprite>sprites\spr_lvldark</sprite>
+        <sprite>sprites\spr_smw_goalgate</sprite>
+        <sprite>sprites\spr_smw_goaltape</sprite>
+        <sprite>sprites\spr_smw_goaltape_get</sprite>
+      </sprites>
+      <sprites name="Warp">
+        <sprite>sprites\spr_door</sprite>
       </sprites>
     </sprites>
     <sprites name="HUD">
@@ -3339,6 +3369,14 @@
             <sprite>sprites\spr_uni_demo_89_2</sprite>
             <sprite>sprites\spr_uni_demo_89_3</sprite>
             <sprite>sprites\spr_uni_demo_89_4</sprite>
+            <sprite>sprites\spr_uni_demo_90_1</sprite>
+            <sprite>sprites\spr_uni_demo_90_2</sprite>
+            <sprite>sprites\spr_uni_demo_91_1</sprite>
+            <sprite>sprites\spr_uni_demo_91_2</sprite>
+            <sprite>sprites\spr_uni_demo_92_1</sprite>
+            <sprite>sprites\spr_uni_demo_92_2</sprite>
+            <sprite>sprites\spr_uni_demo_92_3</sprite>
+            <sprite>sprites\spr_uni_demo_92_4</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3371,6 +3409,18 @@
           <sprite>sprites\spr_mushroomplatform</sprite>
           <sprite>sprites\spr_uni_flagpole</sprite>
           <sprite>sprites\spr_uni_startsing</sprite>
+          <sprite>sprites\spr_uni_goalgate</sprite>
+          <sprites name="Door">
+            <sprite>sprites\spr_uni_demo_93_spawn</sprite>
+            <sprite>sprites\spr_uni_demo_93_1_1</sprite>
+            <sprite>sprites\spr_uni_demo_93_1_2</sprite>
+            <sprite>sprites\spr_uni_demo_93_2_1</sprite>
+            <sprite>sprites\spr_uni_demo_93_2_2</sprite>
+            <sprite>sprites\spr_uni_demo_93_3_1</sprite>
+            <sprite>sprites\spr_uni_demo_93_3_2</sprite>
+            <sprite>sprites\spr_uni_demo_93_4_1</sprite>
+            <sprite>sprites\spr_uni_demo_93_4_2</sprite>
+          </sprites>
         </sprites>
         <sprites name="System">
           <sprites name="Theme">
@@ -3557,6 +3607,7 @@
       <objects name="Mario">
         <object>objects\obj_mario</object>
         <object>objects\obj_deadmario</object>
+        <object>objects\obj_gatemario</object>
         <object>objects\obj_goalmario</object>
         <object>objects\obj_spinner</object>
         <object>objects\obj_castleend</object>
@@ -3605,6 +3656,10 @@
           <object>objects\obj_propellershroom</object>
           <object>objects\obj_boomerangflower</object>
           <object>objects\obj_star</object>
+          <object>objects\obj_10clock</object>
+          <object>objects\obj_100clock</object>
+          <object>objects\obj_n10clock</object>
+          <object>objects\obj_n100clock</object>
         </objects>
         <objects name="Rides">
           <object>objects\obj_hatch</object>
@@ -3646,7 +3701,7 @@
           <object>objects\obj_boomerangblock</object>
           <object>objects\obj_starblock</object>
           <object>objects\obj_pplatform</object>
-          <object>objects\obj_poutline</object>
+          <object>objects\obj_ppoutline</object>
           <object>objects\obj_icecoin</object>
         </objects>
         <object>objects\obj_platform_moving</object>
@@ -3774,6 +3829,10 @@
         <object>objects\obj_hammerbro</object>
         <object>objects\obj_firebro</object>
         <object>objects\obj_boomerangbro</object>
+        <object>objects\obj_muncher_up</object>
+        <object>objects\obj_muncher_down</object>
+        <object>objects\obj_muncher_left</object>
+        <object>objects\obj_muncher_right</object>
       </objects>
       <objects name="Collision">
         <object>objects\obj_solid</object>
@@ -3812,6 +3871,10 @@
         <object>objects\obj_autoscroll</object>
         <object>objects\obj_classicscroll</object>
         <object>objects\obj_flag</object>
+        <object>objects\obj_smw_goalgate</object>
+        <object>objects\obj_smw_goalgate_2</object>
+        <object>objects\obj_smw_goaltape</object>
+        <object>objects\obj_smw_goaltape_get</object>
       </objects>
       <objects name="Effects">
         <object>objects\obj_score</object>
@@ -3840,6 +3903,17 @@
       <object>objects\obj_ringeeffect</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_toobad</object>
+      <objects name="Warps">
+        <object>objects\obj_door_1_1</object>
+        <object>objects\obj_door_1_2</object>
+        <object>objects\obj_door_2_1</object>
+        <object>objects\obj_door_2_2</object>
+        <object>objects\obj_door_3_1</object>
+        <object>objects\obj_door_3_2</object>
+        <object>objects\obj_door_4_1</object>
+        <object>objects\obj_door_4_2</object>
+        <object>objects\obj_door_parent</object>
+      </objects>
     </objects>
     <objects name="UniMaker">
       <objects name="Title Screen">
@@ -4055,6 +4129,10 @@
                 <object>objects\obj_uni_layout_demoresources_88</object>
                 <object>objects\obj_uni_layout_demoresources_89</object>
                 <object>objects\obj_uni_layout_demoresources_90</object>
+                <object>objects\obj_uni_layout_demoresources_91</object>
+                <object>objects\obj_uni_layout_demoresources_92</object>
+                <object>objects\obj_uni_layout_demoresources_93</object>
+                <object>objects\obj_uni_layout_demoresources_94</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4182,6 +4260,9 @@
             <object>objects\obj_uni_demo_17_2</object>
             <object>objects\obj_uni_demo_18_1</object>
             <object>objects\obj_uni_demo_19</object>
+            <object>objects\obj_uni_demo_19_2</object>
+            <object>objects\obj_uni_demo_19_3</object>
+            <object>objects\obj_uni_demo_19_4</object>
             <object>objects\obj_uni_demo_20</object>
             <object>objects\obj_uni_demo_21</object>
             <object>objects\obj_uni_demo_22</object>
@@ -4279,6 +4360,25 @@
             <object>objects\obj_uni_demo_89_2</object>
             <object>objects\obj_uni_demo_89_3</object>
             <object>objects\obj_uni_demo_89_4</object>
+            <object>objects\obj_uni_demo_90_1</object>
+            <object>objects\obj_uni_demo_90_2</object>
+            <object>objects\obj_uni_demo_91_1</object>
+            <object>objects\obj_uni_demo_91_2</object>
+            <object>objects\obj_uni_demo_92_1</object>
+            <object>objects\obj_uni_demo_92_2</object>
+            <object>objects\obj_uni_demo_92_3</object>
+            <object>objects\obj_uni_demo_92_4</object>
+            <objects name="Door">
+              <object>objects\obj_uni_demo_93_spawn</object>
+              <object>objects\obj_uni_demo_item_93_1_1</object>
+              <object>objects\obj_uni_demo_item_93_1_2</object>
+              <object>objects\obj_uni_demo_item_93_2_1</object>
+              <object>objects\obj_uni_demo_item_93_2_2</object>
+              <object>objects\obj_uni_demo_item_93_3_1</object>
+              <object>objects\obj_uni_demo_item_93_3_2</object>
+              <object>objects\obj_uni_demo_item_93_4_1</object>
+              <object>objects\obj_uni_demo_item_93_4_2</object>
+            </objects>
           </objects>
           <objects name="NEW">
             <object>objects\obj_uni_demo2_bgo1</object>
@@ -4303,6 +4403,7 @@
           </objects>
           <object>objects\obj_uni_startsing</object>
           <object>objects\obj_uni_flagpole</object>
+          <object>objects\obj_uni_goalgate</object>
         </objects>
         <objects name="System">
           <objects name="Effects">

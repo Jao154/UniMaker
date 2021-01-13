@@ -52,7 +52,7 @@ image_index = 0;
             <kind>1</kind>
             <string>///Posição
 x = view_xview[0]+58;
-y = view_yview[0]+93;
+y = view_yview[0]+71;
 </string>
           </argument>
         </arguments>

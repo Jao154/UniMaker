@@ -165,19 +165,34 @@ objects[129] = obj_uni_demo_77;
 objects[130] = obj_uni_demo_78;
 objects[131] = obj_uni_demo_79;
 objects[132] = obj_uni_demo_80;
-objects[132] = obj_uni_demo_81;
-objects[133] = obj_uni_demo_82;
-objects[134] = obj_uni_demo_82_1;
-objects[135] = obj_uni_demo_83;
-objects[136] = obj_uni_demo_84;
-objects[137] = obj_uni_demo_85;
-objects[138] = obj_uni_demo_85_1;
-objects[139] = obj_uni_demo_85_2;
-objects[140] = obj_uni_demo_86;
-objects[141] = obj_uni_demo_87;
+objects[133] = obj_uni_demo_81;
+objects[134] = obj_uni_demo_82;
+objects[135] = obj_uni_demo_82_1;
+objects[136] = obj_uni_demo_83;
+objects[137] = obj_uni_demo_84;
+objects[138] = obj_uni_demo_85;
+objects[139] = obj_uni_demo_85_1;
+objects[140] = obj_uni_demo_85_2;
+objects[141] = obj_uni_demo_86;
+objects[142] = obj_uni_demo_87;
+objects[143] = obj_uni_demo_88;
+objects[144] = obj_uni_demo_88_1;
+objects[145] = obj_uni_demo_89_1;
+objects[146] = obj_uni_demo_89_2;
+objects[147] = obj_uni_demo_89_3;
+objects[148] = obj_uni_demo_89_4;
+objects[149] = obj_uni_demo_90_1;
+objects[150] = obj_uni_demo_90_2;
+objects[151] = obj_uni_demo_91_1;
+objects[152] = obj_uni_demo_91_2;
+objects[153] = obj_uni_goalgate;
+objects[154] = obj_uni_demo_91_2;
+objects[155] = obj_uni_demo_91_2;
+objects[156] = obj_uni_demo_91_2;
+objects[157] = obj_uni_demo_91_2;
 
 //Total para ser salvo
-total_objects = 142;
+total_objects = 158;
 </string>
           </argument>
         </arguments>

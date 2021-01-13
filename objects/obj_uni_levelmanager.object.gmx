@@ -155,7 +155,7 @@ if switchon = 1
     with obj_pplatform event_user(1)
     
     //Turn off P-Outline
-    with obj_poutline event_user(1)
+    with obj_ppoutline event_user(1)
 
     //Stop the switch song
     audio_stop_sound(global.uni_musicpack[55]) //P-Switch
@@ -748,7 +748,7 @@ if switchon = 0
     with obj_pplatform event_user(0)
     
     //Turn on P-Outline
-    with obj_poutline event_user(0)
+    with obj_ppoutline event_user(0)
 
     //Start the switch song if it is not playing, and stop the regular music
     if not audio_is_playing(global.uni_musicpack[55]) //P-Switch

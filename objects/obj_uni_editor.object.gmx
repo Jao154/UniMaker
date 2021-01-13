@@ -1096,11 +1096,14 @@ if(global.uni_editor_activity == true)
         case(obj_uni_demo_74_3): global.uni_select_resource = obj_uni_demo_74_4; break;
         case(obj_uni_demo_74_4): global.uni_select_resource = obj_uni_demo_74_1; break;
         
-        case(obj_goalpole_castle): global.uni_select_resource = obj_uni_flagpole; break;
+        //Castle - Flag Pole - Checkpoint - Start Sign - Goal Pole Block - Goal Gate
+        
+        case(obj_uni_goalgate): global.uni_select_resource = obj_uni_flagpole; break;
         case(obj_uni_flagpole): global.uni_select_resource = obj_checkpoint_edit; break;
-        case(obj_checkpoint_edit): global.uni_select_resource = obj_uni_startsing; break;
-        case(obj_uni_startsing): global.uni_select_resource = obj_goalpole_block; break;
-        case(obj_goalpole_block): global.uni_select_resource = obj_goalpole_castle; break;
+        case(obj_checkpoint_edit): global.uni_select_resource = obj_goalpole_block; break;
+        case(obj_goalpole_block): global.uni_select_resource = obj_uni_startsing; break;
+        case(obj_uni_startsing): global.uni_select_resource = obj_goalpole_castle; break;
+        case(obj_goalpole_castle): global.uni_select_resource = obj_uni_goalgate; break;
         
         //P-Block - P-Outline
         case(obj_uni_demo_82): global.uni_select_resource = obj_uni_demo_82_1; break;
@@ -1120,6 +1123,26 @@ if(global.uni_editor_activity == true)
         case(obj_uni_demo_89_2): global.uni_select_resource = obj_uni_demo_89_3; break;
         case(obj_uni_demo_89_3): global.uni_select_resource = obj_uni_demo_89_4; break;
         case(obj_uni_demo_89_4): global.uni_select_resource = obj_uni_demo_89_1; break;
+        
+        //Yoshi - Red Yoshi - Yellow Yoshi - Blue Yoshi
+        case(obj_uni_demo_19): global.uni_select_resource = obj_uni_demo_19_2; break;
+        case(obj_uni_demo_19_2): global.uni_select_resource = obj_uni_demo_19_3; break;
+        case(obj_uni_demo_19_3): global.uni_select_resource = obj_uni_demo_19_4; break;
+        case(obj_uni_demo_19_4): global.uni_select_resource = obj_uni_demo_19; break;
+        
+        //Blue Clock - Green Clock
+        case(obj_uni_demo_90_1): global.uni_select_resource = obj_uni_demo_90_2; break;
+        case(obj_uni_demo_90_2): global.uni_select_resource = obj_uni_demo_90_1; break;
+        
+        //Orange Clock - Purple Clock
+        case(obj_uni_demo_91_1): global.uni_select_resource = obj_uni_demo_91_2; break;
+        case(obj_uni_demo_91_2): global.uni_select_resource = obj_uni_demo_91_1; break;
+        
+        //Munchers
+        case(obj_uni_demo_92_1): global.uni_select_resource = obj_uni_demo_92_2; break;
+        case(obj_uni_demo_92_2): global.uni_select_resource = obj_uni_demo_92_3; break;
+        case(obj_uni_demo_92_3): global.uni_select_resource = obj_uni_demo_92_4; break;
+        case(obj_uni_demo_92_4): global.uni_select_resource = obj_uni_demo_92_1; break;
         
     }
     if(global.uni_select_resource != global.uni_select_resource)

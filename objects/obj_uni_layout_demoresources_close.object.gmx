@@ -51,7 +51,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>///Posição
 x = view_xview[0]+360;
-y = view_yview[0]+41;
+y = view_yview[0]+21;
 </string>
           </argument>
         </arguments>

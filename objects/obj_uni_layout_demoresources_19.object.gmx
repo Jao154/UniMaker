@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///18 - P-Switch
+            <string>///19 - Yoshi
 image_speed = 0;
 image_index = 0;
 </string>
@@ -52,7 +52,7 @@ image_index = 0;
             <kind>1</kind>
             <string>///Posição
 x = view_xview[0]+150;
-y = view_yview[0]+93;
+y = view_yview[0]+71;
 </string>
           </argument>
         </arguments>

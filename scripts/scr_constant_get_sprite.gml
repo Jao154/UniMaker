@@ -23,6 +23,9 @@ switch argument0
     case cs_propeller: return spr_propellershroom
     case cs_boomerang: return spr_boomerangflower
     case cs_greenyoshi: return spr_hatch
+    case cs_redyoshi: return spr_hatch_r
+    case cs_yellowyoshi: return spr_hatch_y
+    case cs_blueyoshi: return spr_hatch_b
     case cs_kuriboshoe: return spr_kuriboshoe
     case cs_1up: return spr_1up
     case cs_3up: return spr_3upmoon

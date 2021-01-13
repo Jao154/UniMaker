@@ -32,7 +32,26 @@ switch argument2
         return instance_create(argument0,argument1,obj_propellershroom)
     case spr_boomerangflower:
         return instance_create(argument0,argument1,obj_boomerangflower)
+        
+        //Yoshi
     case spr_hatch:
+        return instance_create(argument0,argument1,obj_hatch)
+    case spr_hatch_r:
+        var i;
+        i = instance_create(argument0,argument1,obj_hatch)
+        i.sprite_index = spr_hatch_r
+        return i
+    case spr_hatch_y:
+        var i;
+        i = instance_create(argument0,argument1,obj_hatch)
+        i.sprite_index = spr_hatch_y
+        return i
+    case spr_hatch_b:
+        var i;
+        i = instance_create(argument0,argument1,obj_hatch)
+        i.sprite_index = spr_hatch_b
+        return i
+        
         return instance_create(argument0,argument1,obj_hatch)
     case spr_kuriboshoe:
         return instance_create(argument0,argument1,obj_getshoe)
