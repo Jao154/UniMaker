@@ -70,17 +70,9 @@ if(global.uni_level_autoscroll == 1)
 ||(global.uni_level_autoscroll == 4)
 ||(global.uni_level_autoscroll == 5)
 ||(global.uni_level_autoscroll == 6)
-||(global.uni_level_autoscroll_v == 1)
-||(global.uni_level_autoscroll_v == 2)
-||(global.uni_level_autoscroll_v == 3)
-||(global.uni_level_autoscroll_v == 4)
-||(global.uni_level_autoscroll_v == 5)
-||(global.uni_level_autoscroll_v == 6)
     instance_create(view_xview[0]+214,view_yview[0]+226,obj_uni_autoscroll);
 if(global.uni_level_autoscroll == 7)
-||(global.uni_level_autoscroll_v == 7)
 ||(global.uni_level_autoscroll == 8)
-||(global.uni_level_autoscroll_v == 8)
     instance_create(0,0,obj_uni_classicscroll);
 
 //Fechar porta (som)
@@ -114,8 +106,6 @@ alarm[1] = -1;
             <kind>1</kind>
             <string>///Entrar
 
-if(keyboard_check_pressed(vk_up)) {
-
 //Destruir Scrolls
 with(obj_uni_autoscroll) instance_destroy();
 with(obj_uni_classicscroll) instance_destroy();
@@ -141,8 +131,6 @@ image_index = 0;
 
 //Parar alarm    
 alarm[0] = -1;
-
-}
 </string>
           </argument>
         </arguments>
@@ -166,35 +154,16 @@ alarm[0] = -1;
           <argument>
             <kind>1</kind>
             <string>///Let Mario in the door
-if(keyboard_check_pressed(global.key_up))
-&amp;&amp;(instance_exists(dest))
+if (keyboard_check_pressed(global.key_up))
+if(instance_exists(dest))
 &amp;&amp;(dest.entered == 0){
 
-    if(type == 1){
-        if(global.switchon == 1)
-            event_user(0);
+if(instance_exists(obj_mario))
+&amp;&amp;(entered == 0){
+        event_user(0)
     };
-    else if(type == 2){
-    
-        if(locked == 0)
-            event_user(0);
-        else{
-        
-            if(instance_exists(obj_mario)){
-                
-                if(instance_place(x,y,obj_mario))
-                and(obj_mario.state != 2)
-                and(obj_mario.vspeed == 0)
-                and(obj_mario.y &lt;= y-14)
-                and(!instance_place(x,y,obj_key))
-                    audio_play_sfx(snd_door);
-            }
-        }
-    };
-    else
-        event_user(0);
-};
 
+}
 if(instance_exists(obj_mario))
 &amp;&amp;(entered == 1){
 
@@ -205,51 +174,9 @@ if(instance_exists(obj_mario))
 if(instance_exists(obj_goalmario)){
 
     if(place_meeting(x,y,obj_goalmario))
-    and(obj_goalmario.ready == 2)
-    and(obj_goalmario.vspeed == 0)
+    &amp;&amp;(obj_goalmario.ready == 2)
+    &amp;&amp;(obj_goalmario.vspeed == 0)
         image_speed = 0.15;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_key">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if type == 2
-and locked == 1
-and other.held = 1
-and instance_exists(obj_mario)
-and (keyboard_check_pressed(global.key_up))
-{
-    if(instance_place(x,y,obj_mario))
-    and(obj_mario.state != 2)
-    and(obj_mario.vspeed == 0)
-    and(obj_mario.y &lt;= y-14)
-    {
-        audio_play_sfx(sfx_door_unlock); 
-        event_user(1);
-        instance_create(x+3,y-8,obj_spinthump);
-        with(dest){locked = 0; instance_create(x+3,y-8,obj_spinthump);}; 
-        obj_mario.holding = 0; 
-        with(other) instance_destroy();
-    };
-
 }
 </string>
           </argument>
@@ -419,6 +346,29 @@ else{
         draw_sprite(spr_door,0,x,y);
     draw_sprite(spr_door,image_index,x,y);
 };
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="38">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = 1
 </string>
           </argument>
         </arguments>
