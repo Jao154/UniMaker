@@ -3412,14 +3412,7 @@
           <sprite>sprites\spr_uni_goalgate</sprite>
           <sprites name="Door">
             <sprite>sprites\spr_uni_demo_93_spawn</sprite>
-            <sprite>sprites\spr_uni_demo_93_1_1</sprite>
-            <sprite>sprites\spr_uni_demo_93_1_2</sprite>
-            <sprite>sprites\spr_uni_demo_93_2_1</sprite>
-            <sprite>sprites\spr_uni_demo_93_2_2</sprite>
-            <sprite>sprites\spr_uni_demo_93_3_1</sprite>
-            <sprite>sprites\spr_uni_demo_93_3_2</sprite>
-            <sprite>sprites\spr_uni_demo_93_4_1</sprite>
-            <sprite>sprites\spr_uni_demo_93_4_2</sprite>
+            <sprite>sprites\spr_uni_demo_93_1</sprite>
           </sprites>
         </sprites>
         <sprites name="System">
