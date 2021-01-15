@@ -2538,6 +2538,8 @@
       <sound>sound\snd_yoshi_happy</sound>
       <sound>sound\snd_yoshi_hurt</sound>
       <sound>sound\snd_yoshicoin</sound>
+      <sound>sound\snd_door_unlock</sound>
+      <sound>sound\snd_door_locked</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -2867,6 +2869,7 @@
         <sprites name="Ghost">
           <sprite>sprites\spr_boo</sprite>
           <sprite>sprites\spr_bigboo</sprite>
+          <sprite>sprites\spr_eerie</sprite>
         </sprites>
         <sprites name="Castle">
           <sprite>sprites\spr_drybones</sprite>
@@ -2876,6 +2879,11 @@
           <sprite>sprites\spr_thwomp</sprite>
           <sprite>sprites\spr_mechakoopa</sprite>
           <sprite>sprites\spr_mechakoopa_hold</sprite>
+          <sprite>sprites\spr_bonybeetle</sprite>
+          <sprite>sprites\spr_bonybeetle_hide</sprite>
+          <sprite>sprites\spr_bonybeetle_crumble</sprite>
+          <sprite>sprites\spr_spark</sprite>
+          <sprite>sprites\spr_giantspark</sprite>
         </sprites>
         <sprites name="Airship">
           <sprite>sprites\spr_bobomb</sprite>
@@ -2969,6 +2977,11 @@
           <sprite>sprites\spr_donut_red</sprite>
           <sprite>sprites\spr_arrowplatform</sprite>
           <sprite>sprites\spr_expandblock</sprite>
+          <sprite>sprites\spr_yoshiplatform_on</sprite>
+          <sprite>sprites\spr_yoshiplatform_green</sprite>
+          <sprite>sprites\spr_yoshiplatform_red</sprite>
+          <sprite>sprites\spr_yoshiplatform_yellow</sprite>
+          <sprite>sprites\spr_yoshiplatform_blue</sprite>
         </sprites>
         <sprites name="Collectables">
           <sprite>sprites\spr_coin</sprite>
@@ -3095,6 +3108,11 @@
       </sprites>
       <sprites name="Warp">
         <sprite>sprites\spr_door</sprite>
+        <sprite>sprites\spr_door_other</sprite>
+        <sprite>sprites\spr_door_unlocked</sprite>
+        <sprite>sprites\spr_door_p</sprite>
+        <sprite>sprites\spr_warpbox</sprite>
+        <sprite>sprites\spr_warpbox_enter</sprite>
       </sprites>
     </sprites>
     <sprites name="HUD">
@@ -3306,6 +3324,7 @@
             <sprite>sprites\spr_uni_demo_47</sprite>
             <sprite>sprites\spr_uni_demo_48</sprite>
             <sprite>sprites\spr_uni_demo_49</sprite>
+            <sprite>sprites\spr_uni_demo_49_1</sprite>
             <sprite>sprites\spr_uni_demo_50</sprite>
             <sprite>sprites\spr_uni_demo_51</sprite>
             <sprite>sprites\spr_uni_demo_52</sprite>
@@ -3377,6 +3396,14 @@
             <sprite>sprites\spr_uni_demo_92_2</sprite>
             <sprite>sprites\spr_uni_demo_92_3</sprite>
             <sprite>sprites\spr_uni_demo_92_4</sprite>
+            <sprite>sprites\spr_uni_demo_97</sprite>
+            <sprite>sprites\spr_uni_demo_98</sprite>
+            <sprite>sprites\spr_uni_demo_99_1</sprite>
+            <sprite>sprites\spr_uni_demo_99_2</sprite>
+            <sprite>sprites\spr_uni_demo_100_1</sprite>
+            <sprite>sprites\spr_uni_demo_100_2</sprite>
+            <sprite>sprites\spr_uni_demo_100_3</sprite>
+            <sprite>sprites\spr_uni_demo_100_4</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3413,6 +3440,12 @@
           <sprites name="Door">
             <sprite>sprites\spr_uni_demo_93_spawn</sprite>
             <sprite>sprites\spr_uni_demo_93_1</sprite>
+            <sprite>sprites\spr_uni_demo_94_spawn</sprite>
+            <sprite>sprites\spr_uni_demo_94_1</sprite>
+            <sprite>sprites\spr_uni_demo_95_spawn</sprite>
+            <sprite>sprites\spr_uni_demo_95_1</sprite>
+            <sprite>sprites\spr_uni_demo_96_spawn</sprite>
+            <sprite>sprites\spr_uni_demo_96_1</sprite>
           </sprites>
         </sprites>
         <sprites name="System">
@@ -3701,6 +3734,10 @@
         <object>objects\obj_platform_automoving</object>
         <object>objects\obj_platform_touch</object>
         <object>objects\obj_platform_falling</object>
+        <object>objects\obj_yoshiplatform_green</object>
+        <object>objects\obj_yoshiplatform_red</object>
+        <object>objects\obj_yoshiplatform_yellow</object>
+        <object>objects\obj_yoshiplatform_blue</object>
         <object>objects\obj_donut</object>
         <object>objects\obj_donut_red</object>
         <object>objects\obj_expandplatform_hv</object>
@@ -3769,6 +3806,7 @@
           <object>objects\obj_brohammer</object>
           <object>objects\obj_brofire</object>
           <object>objects\obj_boomerang</object>
+          <object>objects\obj_boocircle_boo</object>
         </objects>
         <object>objects\obj_goomba</object>
         <object>objects\obj_roundgoomba</object>
@@ -3794,6 +3832,7 @@
         <object>objects\obj_monty</object>
         <object>objects\obj_firesnake</object>
         <object>objects\obj_boo</object>
+        <object>objects\obj_boocircle</object>
         <object>objects\obj_drybones</object>
         <object>objects\obj_podoboo</object>
         <object>objects\obj_thwomp</object>
@@ -3826,6 +3865,10 @@
         <object>objects\obj_muncher_down</object>
         <object>objects\obj_muncher_left</object>
         <object>objects\obj_muncher_right</object>
+        <object>objects\obj_bonybeetle</object>
+        <object>objects\obj_eerie</object>
+        <object>objects\obj_littlespark</object>
+        <object>objects\obj_giantspark</object>
       </objects>
       <objects name="Collision">
         <object>objects\obj_solid</object>
@@ -3906,6 +3949,39 @@
         <object>objects\obj_door_4_1</object>
         <object>objects\obj_door_4_2</object>
         <object>objects\obj_door_parent</object>
+        <objects name="Locked Door">
+          <object>objects\obj_door_key_1_1</object>
+          <object>objects\obj_door_key_1_2</object>
+          <object>objects\obj_door_key_2_1</object>
+          <object>objects\obj_door_key_2_2</object>
+          <object>objects\obj_door_key_3_1</object>
+          <object>objects\obj_door_key_3_2</object>
+          <object>objects\obj_door_key_4_1</object>
+          <object>objects\obj_door_key_4_2</object>
+          <object>objects\obj_door_locked</object>
+        </objects>
+        <objects name="P-Door">
+          <object>objects\obj_door_p_1_1</object>
+          <object>objects\obj_door_p_1_2</object>
+          <object>objects\obj_door_p_2_1</object>
+          <object>objects\obj_door_p_2_2</object>
+          <object>objects\obj_door_p_3_1</object>
+          <object>objects\obj_door_p_3_2</object>
+          <object>objects\obj_door_p_4_1</object>
+          <object>objects\obj_door_p_4_2</object>
+          <object>objects\obj_door_p_parent</object>
+        </objects>
+        <objects name="Warp Box">
+          <object>objects\obj_warpbox_1_1</object>
+          <object>objects\obj_warpbox_1_2</object>
+          <object>objects\obj_warpbox_2_1</object>
+          <object>objects\obj_warpbox_2_2</object>
+          <object>objects\obj_warpbox_3_1</object>
+          <object>objects\obj_warpbox_3_2</object>
+          <object>objects\obj_warpbox_4_1</object>
+          <object>objects\obj_warpbox_4_2</object>
+          <object>objects\obj_warpbox_parent</object>
+        </objects>
       </objects>
     </objects>
     <objects name="UniMaker">
@@ -4126,6 +4202,11 @@
                 <object>objects\obj_uni_layout_demoresources_92</object>
                 <object>objects\obj_uni_layout_demoresources_93</object>
                 <object>objects\obj_uni_layout_demoresources_94</object>
+                <object>objects\obj_uni_layout_demoresources_95</object>
+                <object>objects\obj_uni_layout_demoresources_96</object>
+                <object>objects\obj_uni_layout_demoresources_97</object>
+                <object>objects\obj_uni_layout_demoresources_98</object>
+                <object>objects\obj_uni_layout_demoresources_99</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4290,6 +4371,7 @@
             <object>objects\obj_uni_demo_47</object>
             <object>objects\obj_uni_demo_48</object>
             <object>objects\obj_uni_demo_49</object>
+            <object>objects\obj_uni_demo_49_1</object>
             <object>objects\obj_uni_demo_50</object>
             <object>objects\obj_uni_demo_51</object>
             <object>objects\obj_uni_demo_52</object>
@@ -4361,6 +4443,14 @@
             <object>objects\obj_uni_demo_92_2</object>
             <object>objects\obj_uni_demo_92_3</object>
             <object>objects\obj_uni_demo_92_4</object>
+            <object>objects\obj_uni_demo_97</object>
+            <object>objects\obj_uni_demo_98</object>
+            <object>objects\obj_uni_demo_99_1</object>
+            <object>objects\obj_uni_demo_99_2</object>
+            <object>objects\obj_uni_demo_100_1</object>
+            <object>objects\obj_uni_demo_100_2</object>
+            <object>objects\obj_uni_demo_100_3</object>
+            <object>objects\obj_uni_demo_100_4</object>
             <objects name="Door">
               <object>objects\obj_uni_demo_93_spawn</object>
               <object>objects\obj_uni_demo_item_93_1_1</object>
@@ -4371,6 +4461,39 @@
               <object>objects\obj_uni_demo_item_93_3_2</object>
               <object>objects\obj_uni_demo_item_93_4_1</object>
               <object>objects\obj_uni_demo_item_93_4_2</object>
+              <objects name="Key">
+                <object>objects\obj_uni_demo_94_spawn</object>
+                <object>objects\obj_uni_demo_item_94_1_1</object>
+                <object>objects\obj_uni_demo_item_94_1_2</object>
+                <object>objects\obj_uni_demo_item_94_2_1</object>
+                <object>objects\obj_uni_demo_item_94_2_2</object>
+                <object>objects\obj_uni_demo_item_94_3_1</object>
+                <object>objects\obj_uni_demo_item_94_3_2</object>
+                <object>objects\obj_uni_demo_item_94_4_1</object>
+                <object>objects\obj_uni_demo_item_94_4_2</object>
+              </objects>
+              <objects name="P-Door">
+                <object>objects\obj_uni_demo_95_spawn</object>
+                <object>objects\obj_uni_demo_95_1_1</object>
+                <object>objects\obj_uni_demo_95_1_2</object>
+                <object>objects\obj_uni_demo_95_2_1</object>
+                <object>objects\obj_uni_demo_95_2_2</object>
+                <object>objects\obj_uni_demo_95_3_1</object>
+                <object>objects\obj_uni_demo_95_3_2</object>
+                <object>objects\obj_uni_demo_95_4_1</object>
+                <object>objects\obj_uni_demo_95_4_2</object>
+              </objects>
+              <objects name="Warp Box">
+                <object>objects\obj_uni_demo_96_spawn</object>
+                <object>objects\obj_uni_demo_96_1_1</object>
+                <object>objects\obj_uni_demo_96_1_2</object>
+                <object>objects\obj_uni_demo_96_2_1</object>
+                <object>objects\obj_uni_demo_96_2_2</object>
+                <object>objects\obj_uni_demo_96_3_1</object>
+                <object>objects\obj_uni_demo_96_3_2</object>
+                <object>objects\obj_uni_demo_96_4_1</object>
+                <object>objects\obj_uni_demo_96_4_2</object>
+              </objects>
             </objects>
           </objects>
           <objects name="NEW">

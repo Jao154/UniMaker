@@ -158,12 +158,32 @@ if (keyboard_check_pressed(vk_up))
 if(instance_exists(dest))
 &amp;&amp;(dest.entered == 0){
 
-if(instance_exists(obj_mario))
-&amp;&amp;(entered == 0){
-        event_user(0)
+    if(type == 1){
+        if(obj_uni_levelmanager.switchon == 1)
+            event_user(0);
     };
+    else if(type == 2){
+    
+        if(locked == 0)
+            event_user(0);
+        else{
+        
+            if(instance_exists(obj_mario)){
+                
+                if(instance_place(x,y,obj_mario))
+                and(obj_mario.state != 2)
+                and(obj_mario.vspeed == 0)
+                and(obj_mario.y &lt;= y-14)
+                and(!instance_place(x,y,obj_key))
+                    audio_play_sfx(snd_door_locked);
+            }
+        }
+    };
+    else
+        event_user(0);
+};
 
-}
+
 if(instance_exists(obj_mario))
 &amp;&amp;(entered == 1){
 
@@ -177,6 +197,48 @@ if(instance_exists(obj_goalmario)){
     &amp;&amp;(obj_goalmario.ready == 2)
     &amp;&amp;(obj_goalmario.vspeed == 0)
         image_speed = 0.15;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_key">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if type == 2
+and locked == 1
+and other.held = 1
+and instance_exists(obj_mario)
+and (keyboard_check_pressed(global.key_up))
+{
+    if(instance_place(x,y,obj_mario))
+    and(obj_mario.state != 2)
+    and(obj_mario.vspeed == 0)
+    and(obj_mario.y &lt;= y-14)
+    {
+        audio_play_sfx(snd_door_unlock); 
+        event_user(1);
+        instance_create(x+3,y-8,obj_spinthump);
+        with(dest){locked = 0; instance_create(x+3,y-8,obj_spinthump);}; 
+        obj_mario.holding = 0; 
+        with(other) instance_destroy();
+    };
+
 }
 </string>
           </argument>
@@ -318,7 +380,7 @@ else{
 //P-Door
 if(type == 1){
 
-    if(global.switchon == 1){
+    if(obj_uni_levelmanager.switchon == 1){
     
         if(image_index &gt; 0)
             draw_sprite(spr_door,1,x,y);
@@ -333,11 +395,11 @@ else if(type == 2){
     if(locked == 0){
     
         if(image_index &gt; 0)
-            draw_sprite(spr_door,0,x,y);
+            draw_sprite(spr_door_other,1,x,y);
         draw_sprite(spr_door_unlocked,image_index,x,y);
     };
     else
-        draw_sprite(spr_door,2,x,y);
+        draw_sprite(spr_door_other,2,x,y);
 };
 //Normal
 else{

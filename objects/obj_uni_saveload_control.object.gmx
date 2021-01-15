@@ -190,9 +190,43 @@ objects[154] = obj_uni_demo_91_2;
 objects[155] = obj_uni_demo_91_2;
 objects[156] = obj_uni_demo_91_2;
 objects[157] = obj_uni_demo_91_2;
+objects[158] = obj_uni_demo_item_93_1_1;
+objects[159] = obj_uni_demo_item_93_1_2;
+objects[160] = obj_uni_demo_item_93_2_1;
+objects[161] = obj_uni_demo_item_93_2_2;
+objects[162] = obj_uni_demo_item_93_3_1;
+objects[163] = obj_uni_demo_item_93_3_2;
+objects[164] = obj_uni_demo_item_93_4_1;
+objects[165] = obj_uni_demo_item_93_4_2;
+objects[166] = obj_uni_demo_item_94_1_1;
+objects[167] = obj_uni_demo_item_94_1_2;
+objects[168] = obj_uni_demo_item_94_2_1;
+objects[169] = obj_uni_demo_item_94_2_2;
+objects[170] = obj_uni_demo_item_94_3_1;
+objects[171] = obj_uni_demo_item_94_3_2;
+objects[172] = obj_uni_demo_item_94_4_1;
+objects[173] = obj_uni_demo_item_94_4_2;
+objects[174] = obj_uni_demo_95_1_1;
+objects[175] = obj_uni_demo_95_1_2;
+objects[176] = obj_uni_demo_95_2_1;
+objects[177] = obj_uni_demo_95_2_2;
+objects[178] = obj_uni_demo_95_3_1;
+objects[179] = obj_uni_demo_95_3_2;
+objects[180] = obj_uni_demo_95_4_1;
+objects[181] = obj_uni_demo_95_4_2;
+objects[182] = obj_uni_demo_96_1_1;
+objects[183] = obj_uni_demo_96_1_2;
+objects[184] = obj_uni_demo_96_2_1;
+objects[185] = obj_uni_demo_96_2_2;
+objects[186] = obj_uni_demo_96_3_1;
+objects[187] = obj_uni_demo_96_3_2;
+objects[188] = obj_uni_demo_96_4_1;
+objects[189] = obj_uni_demo_96_4_2;
+objects[190] = obj_uni_demo_97;
+objects[191] = obj_uni_demo_98;
 
 //Total para ser salvo
-total_objects = 158;
+total_objects = 192;
 </string>
           </argument>
         </arguments>

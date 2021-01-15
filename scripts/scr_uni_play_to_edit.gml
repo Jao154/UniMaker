@@ -119,6 +119,7 @@ with(obj_podoboo) instance_destroy(); instance_activate_object(obj_uni_demo_46);
 with(obj_drybones) instance_destroy(); instance_activate_object(obj_uni_demo_47);
 with(obj_thwomp) instance_destroy(); instance_activate_object(obj_uni_demo_48);
 with(obj_boo) instance_destroy(); instance_activate_object(obj_uni_demo_49);
+with(obj_boocircle) instance_destroy(); instance_activate_object(obj_uni_demo_49_1);
 with(obj_bobomb) instance_destroy(); instance_activate_object(obj_uni_demo_50);
 with(obj_rex) instance_destroy(); instance_activate_object(obj_uni_demo_51);
 with(obj_chargingchuck) instance_destroy(); instance_activate_object(obj_uni_demo_52);
@@ -178,6 +179,14 @@ with(obj_muncher_up) instance_destroy(); instance_activate_object(obj_uni_demo_9
 with(obj_muncher_down) instance_destroy(); instance_activate_object(obj_uni_demo_92_2);
 with(obj_muncher_right) instance_destroy(); instance_activate_object(obj_uni_demo_92_3);
 with(obj_muncher_left) instance_destroy(); instance_activate_object(obj_uni_demo_92_4);
+with(obj_bonybeetle) instance_destroy(); instance_activate_object(obj_uni_demo_97);
+with(obj_eerie) instance_destroy(); instance_activate_object(obj_uni_demo_98);
+with(obj_littlespark) instance_destroy(); instance_activate_object(obj_uni_demo_99_1);
+with(obj_giantspark) instance_destroy(); instance_activate_object(obj_uni_demo_99_2);
+with(obj_yoshiplatform_green) instance_destroy(); instance_activate_object(obj_uni_demo_100_1);
+with(obj_yoshiplatform_red) instance_destroy(); instance_activate_object(obj_uni_demo_100_2);
+with(obj_yoshiplatform_yellow) instance_destroy(); instance_activate_object(obj_uni_demo_100_3);
+with(obj_yoshiplatform_blue) instance_destroy(); instance_activate_object(obj_uni_demo_100_4);
 
 //Portas
 with(obj_door_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_1_1);
@@ -188,6 +197,36 @@ with(obj_door_3_1) instance_destroy(); instance_activate_object(obj_uni_demo_ite
 with(obj_door_3_2) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_3_2);
 with(obj_door_4_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_4_1);
 with(obj_door_4_2) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_4_2);
+
+//Portas Trancadas
+with(obj_door_key_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_1_1);
+with(obj_door_key_1_2) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_1_2);
+with(obj_door_key_2_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_2_1);
+with(obj_door_key_2_2) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_2_2);
+with(obj_door_key_3_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_3_1);
+with(obj_door_key_3_2) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_3_2);
+with(obj_door_key_4_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_4_1);
+with(obj_door_key_4_2) instance_destroy(); instance_activate_object(obj_uni_demo_item_94_4_2);
+
+//P-Door
+with(obj_door_p_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_95_1_1);
+with(obj_door_p_1_2) instance_destroy(); instance_activate_object(obj_uni_demo_95_1_2);
+with(obj_door_p_2_1) instance_destroy(); instance_activate_object(obj_uni_demo_95_2_1);
+with(obj_door_p_2_2) instance_destroy(); instance_activate_object(obj_uni_demo_95_2_2);
+with(obj_door_p_3_1) instance_destroy(); instance_activate_object(obj_uni_demo_95_3_1);
+with(obj_door_p_3_2) instance_destroy(); instance_activate_object(obj_uni_demo_95_3_2);
+with(obj_door_p_4_1) instance_destroy(); instance_activate_object(obj_uni_demo_95_4_1);
+with(obj_door_p_4_2) instance_destroy(); instance_activate_object(obj_uni_demo_95_4_2);
+
+//Warp Box
+with(obj_warpbox_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_96_1_1);
+with(obj_warpbox_1_2) instance_destroy(); instance_activate_object(obj_uni_demo_96_1_2);
+with(obj_warpbox_2_1) instance_destroy(); instance_activate_object(obj_uni_demo_96_2_1);
+with(obj_warpbox_2_2) instance_destroy(); instance_activate_object(obj_uni_demo_96_2_2);
+with(obj_warpbox_3_1) instance_destroy(); instance_activate_object(obj_uni_demo_96_3_1);
+with(obj_warpbox_3_2) instance_destroy(); instance_activate_object(obj_uni_demo_96_3_2);
+with(obj_warpbox_4_1) instance_destroy(); instance_activate_object(obj_uni_demo_96_4_1);
+with(obj_warpbox_4_2) instance_destroy(); instance_activate_object(obj_uni_demo_96_4_2);
 
 //------------ Derivados ------------
 //Player

@@ -538,7 +538,7 @@
     <option_version_build>0</option_version_build>
     <option_version_company>Mario Silva (NinStar)</option_version_company>
     <option_version_copyright></option_version_copyright>
-    <option_version_description>Make your Own Super Mario World Styles Levels!</option_version_description>
+    <option_version_description>Make your Own Super Mario World Style Levels!</option_version_description>
     <option_version_major>1</option_version_major>
     <option_version_minor>2</option_version_minor>
     <option_version_product>SMW: Studio</option_version_product>
@@ -619,7 +619,7 @@
     <option_windows_company_info>Mario Silva (NinStar)</option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
-    <option_windows_description_info>Make your Own Super Mario World Styles Levels!</option_windows_description_info>
+    <option_windows_description_info>Make your Own Super Mario World Style Levels!</option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>

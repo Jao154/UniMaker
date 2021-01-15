@@ -40,7 +40,7 @@ direct = -1
 alarm[10] = 2
 
 //Do not animate
-image_speed = 0
+image_speed = 0.15
 
 //Move up
 vspeed = 1
