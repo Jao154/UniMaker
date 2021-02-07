@@ -224,9 +224,18 @@ objects[188] = obj_uni_demo_96_4_1;
 objects[189] = obj_uni_demo_96_4_2;
 objects[190] = obj_uni_demo_97;
 objects[191] = obj_uni_demo_98;
+objects[192] = obj_uni_demo_99_1;
+objects[193] = obj_uni_demo_99_2;
+objects[194] = obj_uni_demo_100;
+objects[195] = obj_uni_demo_101_1;
+objects[196] = obj_uni_demo_101_2;
+objects[197] = obj_uni_demo_101_3;
+objects[198] = obj_uni_demo_101_4;
+objects[199] = obj_uni_demo_102_1;
+objects[200] = obj_uni_demo_102_2;
 
 //Total para ser salvo
-total_objects = 192;
+total_objects = 201;
 </string>
           </argument>
         </arguments>

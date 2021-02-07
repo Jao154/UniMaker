@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///100 - Yoshi Platform
+            <string>///100 - Fall Platform
 image_speed = 0;
 image_index = 0;
 </string>
@@ -76,7 +76,7 @@ y = view_yview[0]+209;
           <argument>
             <kind>1</kind>
             <string>///Selecionar
-global.uni_select_resource = obj_uni_demo_100_1;
+global.uni_select_resource = obj_uni_demo_100;
 //Fechar
 with(obj_uni_layout_demoresources_close)
     event_user(0);

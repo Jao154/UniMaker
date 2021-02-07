@@ -202,10 +202,13 @@ with(obj_uni_demo_97){visible = 0; instance_create(x,y,obj_bonybeetle);}
 with(obj_uni_demo_98){visible = 0; instance_create(x,y,obj_eerie);}
 with(obj_uni_demo_99_1){visible = 0; instance_create(x,y,obj_littlespark);}
 with(obj_uni_demo_99_2){visible = 0; instance_create(x,y,obj_giantspark);}
-with(obj_uni_demo_100_1){visible = 0;}; instance_create(x,y,obj_yoshiplatform_green);
-with(obj_uni_demo_100_2){visible = 0;}; instance_create(x,y,obj_yoshiplatform_red);
-with(obj_uni_demo_100_3){visible = 0;}; instance_create(x,y,obj_yoshiplatform_yellow);
-with(obj_uni_demo_100_4){visible = 0;}; instance_create(x,y,obj_yoshiplatform_blue);
+with(obj_uni_demo_100){visible = 0; instance_create(x,y,obj_platform_falling);}
+with(obj_uni_demo_101_1){visible = 0; instance_create(x+16,y+32,obj_jumppiranha);}
+with(obj_uni_demo_101_2){visible = 0; instance_create(x+16,y-32,obj_jumppiranha_down);}
+with(obj_uni_demo_101_3){visible = 0; instance_create(x-32,y+16,obj_jumppiranha_right);}
+with(obj_uni_demo_101_4){visible = 0; instance_create(x+32,y+16,obj_jumppiranha_left);}
+with(obj_uni_demo_102_1){with(instance_create(x,y,obj_firebar_block)) direct = -1; visible = false;};
+with(obj_uni_demo_102_2){with(instance_create(x,y,obj_firebar_block)) direct = 1; visible = false;};
 
 //Portas
 with(obj_uni_demo_item_93_1_1){visible = 0; instance_create(x,y,obj_door_1_1);}

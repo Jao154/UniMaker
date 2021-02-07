@@ -43,6 +43,10 @@ effect_blend = c_white;
 
 sprite_index = scr_mariowalk();
 
+//Use small mask for small Mario
+if global.powerup = cs_small
+    mask_index = spr_smallmask
+
 //Goal Mario's state
 ready = 0
 type = 0;

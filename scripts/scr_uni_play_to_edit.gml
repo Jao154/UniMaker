@@ -183,10 +183,13 @@ with(obj_bonybeetle) instance_destroy(); instance_activate_object(obj_uni_demo_9
 with(obj_eerie) instance_destroy(); instance_activate_object(obj_uni_demo_98);
 with(obj_littlespark) instance_destroy(); instance_activate_object(obj_uni_demo_99_1);
 with(obj_giantspark) instance_destroy(); instance_activate_object(obj_uni_demo_99_2);
-with(obj_yoshiplatform_green) instance_destroy(); instance_activate_object(obj_uni_demo_100_1);
-with(obj_yoshiplatform_red) instance_destroy(); instance_activate_object(obj_uni_demo_100_2);
-with(obj_yoshiplatform_yellow) instance_destroy(); instance_activate_object(obj_uni_demo_100_3);
-with(obj_yoshiplatform_blue) instance_destroy(); instance_activate_object(obj_uni_demo_100_4);
+with(obj_platform_falling) instance_destroy(); instance_activate_object(obj_uni_demo_100);
+with(obj_jumppiranha) instance_destroy(); instance_activate_object(obj_uni_demo_101_1);
+with(obj_jumppiranha_down) instance_destroy(); instance_activate_object(obj_uni_demo_101_2);
+with(obj_jumppiranha_left) instance_destroy(); instance_activate_object(obj_uni_demo_101_3);
+with(obj_jumppiranha_right) instance_destroy(); instance_activate_object(obj_uni_demo_101_4);
+with(obj_firebar_block) instance_destroy(); instance_activate_object(obj_uni_demo_102_1); with(obj_firebar) instance_destroy(); with(obj_firebarball) instance_destroy();
+with(obj_firebar_block) instance_destroy(); instance_activate_object(obj_uni_demo_102_2); with(obj_firebar) instance_destroy(); with(obj_firebarball) instance_destroy();
 
 //Portas
 with(obj_door_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_1_1);

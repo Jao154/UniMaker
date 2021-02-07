@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///One piece of a firebar
-
+ready = 1;
 //Animate
 image_speed = 0.3
 </string>
@@ -79,7 +79,10 @@ else
           <argument>
             <kind>1</kind>
             <string>///Hurt Mario
+if(other.sprite_index != spr_mario_shell_duck)
+&amp;&amp;(other.sprite_index != spr_statue){
 with other event_user(0)
+};
 </string>
           </argument>
         </arguments>

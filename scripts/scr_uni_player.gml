@@ -104,10 +104,7 @@ with(obj_uni_demo_34){instance_destroy(); instance_create(x,y,obj_propellershroo
 with(obj_uni_demo_35){instance_destroy(); instance_create(x,y,obj_goomba);}
 with(obj_uni_demo_36_1){instance_destroy(); instance_create(x+17,y+16,obj_koopa);} //x = 16, y = 16
 with(obj_uni_demo_36_2){instance_destroy(); instance_create(x+17,y+16,obj_koopa_red);} //x = 16, y = 16
-with(obj_uni_demo_37_1){instance_destroy(); instance_create(x+16,y+32,obj_piranhaplant);}
-with(obj_uni_demo_37_2){instance_destroy(); instance_create(x+16,y-32,obj_piranhaplant_down);}
-with(obj_uni_demo_37_3){instance_destroy(); instance_create(x-32,y+16,obj_piranhaplant_right);}
-with(obj_uni_demo_37_4){instance_destroy(); instance_create(x+32,y+16,obj_piranhaplant_left);}
+
 with(obj_uni_demo_38){instance_destroy(); instance_create(x,y,obj_dinotorch);}
 with(obj_uni_demo_39){instance_destroy(); instance_create(x+8,y,obj_swooper);}
 with(obj_uni_demo_40){instance_destroy(); instance_create(x,y,obj_spiney);}
@@ -168,6 +165,42 @@ with(obj_uni_demo2_bgo2){instance_destroy(); event_user(3);}
 with(obj_uni_demo2_bgo3){instance_destroy(); event_user(3);}
 with(obj_uni_demo2_bgo4){instance_destroy(); event_user(3);}
 with(obj_uni_demo_77){instance_destroy(); instance_create(x,y,obj_mechakoopa);}
+with(obj_uni_demo_78){instance_destroy(); instance_create(x,y,obj_bigboo);}
+with(obj_uni_demo_79){instance_destroy(); instance_create(x,y,obj_icecoin);}
+with(obj_uni_demo_80){instance_destroy(); instance_create(x,y,obj_banzaibill);}
+with(obj_uni_demo_81){instance_destroy(); instance_create(x,y,obj_pokey);}
+with(obj_uni_demo_82){instance_destroy(); instance_create(x,y,obj_pplatform);}
+with(obj_uni_demo_82_1){instance_destroy(); instance_create(x,y,obj_ppoutline);}
+with(obj_uni_demo_83){instance_destroy(); instance_create(x,y,obj_wiggler);}
+with(obj_uni_demo_84){instance_destroy(); instance_create(x,y,obj_spike);}
+with(obj_uni_demo_85){instance_destroy(); instance_create(x,y,obj_hammerbro);}
+with(obj_uni_demo_85_1){instance_destroy(); instance_create(x,y,obj_firebro);}
+with(obj_uni_demo_85_2){instance_destroy(); instance_create(x,y,obj_boomerangbro);}
+with(obj_uni_demo_86){instance_destroy(); instance_create(x,y,obj_boomboom);}
+with(obj_uni_demo_88_1){instance_destroy(); instance_create(x,y,obj_brick_large);}
+with(obj_uni_demo_89_1){instance_destroy(); instance_create(x,y,obj_10coin);}
+with(obj_uni_demo_89_2){instance_destroy(); instance_create(x,y,obj_30coin);}
+with(obj_uni_demo_89_3){instance_destroy(); instance_create(x,y,obj_50coin);}
+with(obj_uni_demo_89_4){instance_destroy(); instance_create(x,y,obj_yoshicoin);}
+with(obj_uni_demo_90_1){instance_destroy(); instance_create(x,y,obj_10clock);}
+with(obj_uni_demo_90_2){instance_destroy(); instance_create(x,y,obj_100clock);}
+with(obj_uni_demo_91_1){instance_destroy(); instance_create(x,y,obj_n10clock);}
+with(obj_uni_demo_91_2){instance_destroy(); instance_create(x,y,obj_n100clock);}
+with(obj_uni_demo_92_1){instance_destroy(); instance_create(x,y,obj_muncher_up);}
+with(obj_uni_demo_92_2){instance_destroy(); instance_create(x,y,obj_muncher_down);}
+with(obj_uni_demo_92_3){instance_destroy(); instance_create(x,y,obj_muncher_right);}
+with(obj_uni_demo_92_4){instance_destroy(); instance_create(x,y,obj_muncher_left);}
+with(obj_uni_demo_97){instance_destroy(); instance_create(x,y,obj_bonybeetle);}
+with(obj_uni_demo_98){instance_destroy(); instance_create(x,y,obj_eerie);}
+with(obj_uni_demo_99_1){instance_destroy(); instance_create(x,y,obj_littlespark);}
+with(obj_uni_demo_99_2){instance_destroy(); instance_create(x,y,obj_giantspark);}
+with(obj_uni_demo_100){instance_destroy(); instance_create(x,y,obj_platform_falling);}
+with(obj_uni_demo_101_1){instance_destroy(); instance_create(x+16,y+32,obj_jumppiranha);}
+with(obj_uni_demo_101_2){instance_destroy(); instance_create(x+16,y-32,obj_jumppiranha_down);}
+with(obj_uni_demo_101_3){instance_destroy(); instance_create(x-32,y+16,obj_jumppiranha_right);}
+with(obj_uni_demo_101_4){instance_destroy(); instance_create(x+32,y+16,obj_jumppiranha_left);}
+with(obj_uni_demo_102_1){with(instance_create(x,y,obj_firebar_block)) direct = -1;}
+with(obj_uni_demo_102_2){with(instance_create(x,y,obj_firebar_block)) direct = 1;}
 
 //------------ Objetos especiais ------------
 with(obj_uni_demo_8_1){

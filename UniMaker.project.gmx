@@ -2795,6 +2795,7 @@
         <sprite>sprites\spr_vine</sprite>
         <sprite>sprites\spr_ppoutline</sprite>
         <sprite>sprites\spr_pplatform</sprite>
+        <sprite>sprites\spr_firebar_block</sprite>
       </sprites>
       <sprites name="Enemies">
         <sprites name="Land">
@@ -2838,6 +2839,8 @@
           <sprite>sprites\spr_muncher_down</sprite>
           <sprite>sprites\spr_muncher_right</sprite>
           <sprite>sprites\spr_muncher_left</sprite>
+          <sprite>sprites\spr_jumppiranha</sprite>
+          <sprite>sprites\spr_jumppiranha_side</sprite>
         </sprites>
         <sprites name="Water">
           <sprite>sprites\spr_cheepcheep</sprite>
@@ -2973,15 +2976,11 @@
         </sprites>
         <sprites name="Platforms">
           <sprite>sprites\spr_platform</sprite>
+          <sprite>sprites\spr_platform_falling</sprite>
           <sprite>sprites\spr_donut</sprite>
           <sprite>sprites\spr_donut_red</sprite>
           <sprite>sprites\spr_arrowplatform</sprite>
           <sprite>sprites\spr_expandblock</sprite>
-          <sprite>sprites\spr_yoshiplatform_on</sprite>
-          <sprite>sprites\spr_yoshiplatform_green</sprite>
-          <sprite>sprites\spr_yoshiplatform_red</sprite>
-          <sprite>sprites\spr_yoshiplatform_yellow</sprite>
-          <sprite>sprites\spr_yoshiplatform_blue</sprite>
         </sprites>
         <sprites name="Collectables">
           <sprite>sprites\spr_coin</sprite>
@@ -3400,10 +3399,13 @@
             <sprite>sprites\spr_uni_demo_98</sprite>
             <sprite>sprites\spr_uni_demo_99_1</sprite>
             <sprite>sprites\spr_uni_demo_99_2</sprite>
-            <sprite>sprites\spr_uni_demo_100_1</sprite>
-            <sprite>sprites\spr_uni_demo_100_2</sprite>
-            <sprite>sprites\spr_uni_demo_100_3</sprite>
-            <sprite>sprites\spr_uni_demo_100_4</sprite>
+            <sprite>sprites\spr_uni_demo_100</sprite>
+            <sprite>sprites\spr_uni_demo_101_1</sprite>
+            <sprite>sprites\spr_uni_demo_101_2</sprite>
+            <sprite>sprites\spr_uni_demo_101_3</sprite>
+            <sprite>sprites\spr_uni_demo_101_4</sprite>
+            <sprite>sprites\spr_uni_demo_102_1</sprite>
+            <sprite>sprites\spr_uni_demo_102_2</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3807,6 +3809,8 @@
           <object>objects\obj_brofire</object>
           <object>objects\obj_boomerang</object>
           <object>objects\obj_boocircle_boo</object>
+          <object>objects\obj_firebar</object>
+          <object>objects\obj_firebarball</object>
         </objects>
         <object>objects\obj_goomba</object>
         <object>objects\obj_roundgoomba</object>
@@ -3869,6 +3873,11 @@
         <object>objects\obj_eerie</object>
         <object>objects\obj_littlespark</object>
         <object>objects\obj_giantspark</object>
+        <object>objects\obj_jumppiranha</object>
+        <object>objects\obj_jumppiranha_down</object>
+        <object>objects\obj_jumppiranha_right</object>
+        <object>objects\obj_jumppiranha_left</object>
+        <object>objects\obj_firebar_block</object>
       </objects>
       <objects name="Collision">
         <object>objects\obj_solid</object>
@@ -4207,6 +4216,8 @@
                 <object>objects\obj_uni_layout_demoresources_97</object>
                 <object>objects\obj_uni_layout_demoresources_98</object>
                 <object>objects\obj_uni_layout_demoresources_99</object>
+                <object>objects\obj_uni_layout_demoresources_100</object>
+                <object>objects\obj_uni_layout_demoresources_101</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4447,10 +4458,13 @@
             <object>objects\obj_uni_demo_98</object>
             <object>objects\obj_uni_demo_99_1</object>
             <object>objects\obj_uni_demo_99_2</object>
-            <object>objects\obj_uni_demo_100_1</object>
-            <object>objects\obj_uni_demo_100_2</object>
-            <object>objects\obj_uni_demo_100_3</object>
-            <object>objects\obj_uni_demo_100_4</object>
+            <object>objects\obj_uni_demo_100</object>
+            <object>objects\obj_uni_demo_101_1</object>
+            <object>objects\obj_uni_demo_101_2</object>
+            <object>objects\obj_uni_demo_101_3</object>
+            <object>objects\obj_uni_demo_101_4</object>
+            <object>objects\obj_uni_demo_102_1</object>
+            <object>objects\obj_uni_demo_102_2</object>
             <objects name="Door">
               <object>objects\obj_uni_demo_93_spawn</object>
               <object>objects\obj_uni_demo_item_93_1_1</object>
