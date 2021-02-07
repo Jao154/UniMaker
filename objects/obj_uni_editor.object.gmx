@@ -1166,6 +1166,10 @@ if(global.uni_editor_activity == true)
         //Fire Bar
         case(obj_uni_demo_102_1): global.uni_select_resource = obj_uni_demo_102_2; break;
         case(obj_uni_demo_102_2): global.uni_select_resource = obj_uni_demo_102_1; break;
+        
+        //Bowser Statue - Golden Bowser Statue
+        case(obj_uni_demo_103_1): global.uni_select_resource = obj_uni_demo_103_2; break;
+        case(obj_uni_demo_103_2): global.uni_select_resource = obj_uni_demo_103_1; break;
     }
     if(global.uni_select_resource != global.uni_select_resource)
         audio_playstop_sound(snd_magic,0,false);
@@ -1895,7 +1899,7 @@ if(global.uni_play == 1){
 ///Coin
 draw_set_font(font_coin);
 draw_sprite_ext(spr_hud_coin,0,view_xview[0]+17,view_yview[0]+35,1,1,0,c_white,1);
-draw_text(view_xview[0]+43,view_yview[0]+35,string_add_zeros(global.coins,2));
+draw_text(view_xview[0]+45,view_yview[0]+40,string_add_zeros(global.coins,2));
 
 ///Lives
 draw_sprite_ext(spr_hud_mario,22,view_xview[0]+15,view_yview[0]+8,1,1,0,c_white,1);
@@ -1913,7 +1917,7 @@ else{
 draw_set_font(font_score);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_ext_transformed(view_xview[0]+388,view_yview[0]+31,string_add_zeros(score,6),0,90,1,1,0);
+draw_text_ext_transformed(view_xview[0]+377,view_yview[0]+35,string_add_zeros(score,6),0,90,1,1,0);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
@@ -1925,14 +1929,14 @@ else
     tms = string_add_zeros(global.uni_level_time,3);
 
 draw_set_font(font_time)
-draw_sprite_ext(spr_hud_timer,0,view_xview[0]+348,view_yview[0]+10,1,1,0,c_white,1);
-draw_text(view_xview[0]+375,view_yview[0]+11,tms);
+draw_sprite_ext(spr_hud_timer,0,view_xview[0]+348,view_yview[0]+20,1,1,0,c_white,1);
+draw_text(view_xview[0]+375,view_yview[0]+19,tms);
 if(global.uni_level_time &lt; 101)
 if(global.uni_level_time &gt; -1){
     
     draw_set_font(font_timehurry)
-    draw_sprite_ext(spr_hud_timer,1,view_xview[0]+348,view_yview[0]+10,1,1,0,c_white,1);
-    draw_text(view_xview[0]+375,view_yview[0]+11,tms);
+    draw_sprite_ext(spr_hud_timer,1,view_xview[0]+348,view_yview[0]+20,1,1,0,c_white,1);
+    draw_text(view_xview[0]+375,view_yview[0]+19,tms)
 };
 };
 </string>

@@ -190,6 +190,8 @@ with(obj_jumppiranha_left) instance_destroy(); instance_activate_object(obj_uni_
 with(obj_jumppiranha_right) instance_destroy(); instance_activate_object(obj_uni_demo_101_4);
 with(obj_firebar_block) instance_destroy(); instance_activate_object(obj_uni_demo_102_1); with(obj_firebar) instance_destroy(); with(obj_firebarball) instance_destroy();
 with(obj_firebar_block) instance_destroy(); instance_activate_object(obj_uni_demo_102_2); with(obj_firebar) instance_destroy(); with(obj_firebarball) instance_destroy();
+with(obj_bowserstatue) instance_destroy(); instance_activate_object(obj_uni_demo_103_1);
+with(obj_bowserstatue_gold) instance_destroy(); instance_activate_object(obj_uni_demo_103_2); with(obj_bowserstatue_fire_real) instance_destroy(); 
 
 //Portas
 with(obj_door_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_1_1);

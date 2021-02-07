@@ -201,6 +201,8 @@ with(obj_uni_demo_101_3){instance_destroy(); instance_create(x-32,y+16,obj_jumpp
 with(obj_uni_demo_101_4){instance_destroy(); instance_create(x+32,y+16,obj_jumppiranha_left);}
 with(obj_uni_demo_102_1){with(instance_create(x,y,obj_firebar_block)) direct = -1;}
 with(obj_uni_demo_102_2){with(instance_create(x,y,obj_firebar_block)) direct = 1;}
+with(obj_uni_demo_103_1){instance_destroy(); instance_create(x,y,obj_bowserstatue);}
+with(obj_uni_demo_103_2){instance_destroy(); instance_create(x,y,obj_bowserstatue_gold);}
 
 //------------ Objetos especiais ------------
 with(obj_uni_demo_8_1){

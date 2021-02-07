@@ -2887,6 +2887,9 @@
           <sprite>sprites\spr_bonybeetle_crumble</sprite>
           <sprite>sprites\spr_spark</sprite>
           <sprite>sprites\spr_giantspark</sprite>
+          <sprite>sprites\spr_bowserstatue</sprite>
+          <sprite>sprites\spr_bowserstatue_fire</sprite>
+          <sprite>sprites\spr_bowserstatue_gold</sprite>
         </sprites>
         <sprites name="Airship">
           <sprite>sprites\spr_bobomb</sprite>
@@ -3406,6 +3409,8 @@
             <sprite>sprites\spr_uni_demo_101_4</sprite>
             <sprite>sprites\spr_uni_demo_102_1</sprite>
             <sprite>sprites\spr_uni_demo_102_2</sprite>
+            <sprite>sprites\spr_uni_demo_103_1</sprite>
+            <sprite>sprites\spr_uni_demo_103_2</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3811,6 +3816,7 @@
           <object>objects\obj_boocircle_boo</object>
           <object>objects\obj_firebar</object>
           <object>objects\obj_firebarball</object>
+          <object>objects\obj_bowserstatue_fire_real</object>
         </objects>
         <object>objects\obj_goomba</object>
         <object>objects\obj_roundgoomba</object>
@@ -3878,6 +3884,8 @@
         <object>objects\obj_jumppiranha_right</object>
         <object>objects\obj_jumppiranha_left</object>
         <object>objects\obj_firebar_block</object>
+        <object>objects\obj_bowserstatue</object>
+        <object>objects\obj_bowserstatue_gold</object>
       </objects>
       <objects name="Collision">
         <object>objects\obj_solid</object>
@@ -4218,6 +4226,7 @@
                 <object>objects\obj_uni_layout_demoresources_99</object>
                 <object>objects\obj_uni_layout_demoresources_100</object>
                 <object>objects\obj_uni_layout_demoresources_101</object>
+                <object>objects\obj_uni_layout_demoresources_102</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4465,6 +4474,8 @@
             <object>objects\obj_uni_demo_101_4</object>
             <object>objects\obj_uni_demo_102_1</object>
             <object>objects\obj_uni_demo_102_2</object>
+            <object>objects\obj_uni_demo_103_1</object>
+            <object>objects\obj_uni_demo_103_2</object>
             <objects name="Door">
               <object>objects\obj_uni_demo_93_spawn</object>
               <object>objects\obj_uni_demo_item_93_1_1</object>

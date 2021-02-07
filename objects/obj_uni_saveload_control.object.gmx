@@ -233,9 +233,11 @@ objects[197] = obj_uni_demo_101_3;
 objects[198] = obj_uni_demo_101_4;
 objects[199] = obj_uni_demo_102_1;
 objects[200] = obj_uni_demo_102_2;
+objects[201] = obj_uni_demo_103_1;
+objects[202] = obj_uni_demo_103_2;
 
 //Total para ser salvo
-total_objects = 201;
+total_objects = 203;
 </string>
           </argument>
         </arguments>
