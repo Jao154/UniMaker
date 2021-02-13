@@ -63,6 +63,7 @@ if(global.uni_level_style == 4)
 with(obj_uni_startsing){visible = 0; event_user(3); instance_create(x,y,obj_uni_start);}
 with(obj_uni_flagpole){visible = 0; instance_create(x,y,obj_flagpole);}
 with(obj_uni_goalgate){visible = 0; instance_create(x,y,obj_smw_goalgate);}
+with(obj_uni_shine){visible = 0; instance_create(x,y,obj_shine);}
 //------------ Objetos gerais ------------
 with(obj_uni_ground){visible = 0; event_user(3)}
 with(obj_uni_demo_2){visible = 0; event_user(3)}
@@ -123,6 +124,8 @@ with(obj_uni_demo_45){visible = 0; instance_create(x,y,obj_porchupuffer);}
 with(obj_uni_demo_46){visible = 0; instance_create(x,y,obj_podoboo);}
 with(obj_uni_demo_47){visible = 0; instance_create(x+17,y+16,obj_drybones);}
 with(obj_uni_demo_48){visible = 0; instance_create(x,y,obj_thwomp);}
+with(obj_uni_demo_48_1){visible = 0; instance_create(x,y,obj_thwimp);}
+with(obj_uni_demo_48_2){visible = 0; instance_create(x,y,obj_thwimp_2);}
 with(obj_uni_demo_49){visible = 0; instance_create(x,y,obj_boo);}
 with(obj_uni_demo_49_1){visible = 0; instance_create(x,y,obj_boocircle);}
 with(obj_uni_demo_50){visible = 0; instance_create(x,y,obj_bobomb);}

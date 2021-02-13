@@ -659,6 +659,7 @@ if(global.uni_mode == 1){
         || (instance_exists(obj_goalmario))
         or (audio_is_playing(snd_key))
         or (audio_is_playing(snd_flagpole))
+        or (audio_is_playing(snd_shine))
         or (audio_is_playing(global.uni_musicpack[60])) //Course Clear
         or (audio_is_playing(global.uni_musicpack[64])) //Boss Clear
         or (audio_is_playing(global.uni_musicpack[54])) //Super Star
@@ -716,6 +717,7 @@ if (global.uni_music_offon == true){
         || (instance_exists(obj_goalmario))
         or (audio_is_playing(snd_key))
         or (audio_is_playing(snd_flagpole))
+        or (audio_is_playing(snd_shine))
         or (audio_is_playing(global.uni_musicpack[60])) //Course Clear
         or (audio_is_playing(global.uni_musicpack[64])) //Boss Clear
         or (audio_is_playing(global.uni_musicpack[54])) //Super Star
@@ -1100,7 +1102,8 @@ if(global.uni_editor_activity == true)
         
         case(obj_uni_goalgate): global.uni_select_resource = obj_uni_flagpole; break;
         case(obj_uni_flagpole): global.uni_select_resource = obj_checkpoint_edit; break;
-        case(obj_checkpoint_edit): global.uni_select_resource = obj_goalpole_block; break;
+        case(obj_checkpoint_edit): global.uni_select_resource = obj_uni_shine; break;
+        case(obj_uni_shine): global.uni_select_resource = obj_goalpole_block; break;
         case(obj_goalpole_block): global.uni_select_resource = obj_uni_startsing; break;
         case(obj_uni_startsing): global.uni_select_resource = obj_goalpole_castle; break;
         case(obj_goalpole_castle): global.uni_select_resource = obj_uni_goalgate; break;
@@ -1170,6 +1173,11 @@ if(global.uni_editor_activity == true)
         //Bowser Statue - Golden Bowser Statue
         case(obj_uni_demo_103_1): global.uni_select_resource = obj_uni_demo_103_2; break;
         case(obj_uni_demo_103_2): global.uni_select_resource = obj_uni_demo_103_1; break;
+        
+        //Thwomp - Thwimp
+        case(obj_uni_demo_48): global.uni_select_resource = obj_uni_demo_48_1; break;
+        case(obj_uni_demo_48_1): global.uni_select_resource = obj_uni_demo_48_2; break;
+        case(obj_uni_demo_48_2): global.uni_select_resource = obj_uni_demo_48; break;
     }
     if(global.uni_select_resource != global.uni_select_resource)
         audio_playstop_sound(snd_magic,0,false);

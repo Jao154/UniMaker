@@ -54,7 +54,7 @@ rot2 = 0;
           <argument>
             <kind>1</kind>
             <string>//Reconhecimento de formato
-fname = get_open_filename("UniMaker 1.S/1.0 Course|*.unis;*.uni","");   
+fname = get_open_filename("SMW: STUDIO and UniMaker 1.S/1.0 Course|*.smws;*.unis;*.uni","");   
 
 //Se foi carregado algum arquivo
 if(fname!=""){

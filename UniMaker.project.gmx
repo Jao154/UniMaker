@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="328" name="datafiles">
+  <datafiles number="340" name="datafiles">
     <datafile>
       <name>_cta.ogg</name>
       <exists>-1</exists>
@@ -1367,24 +1367,7 @@
     <datafile>
       <name>play_1.ogg</name>
       <exists>-1</exists>
-      <size>3806211</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_1.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_1.ogg</name>
-      <exists>-1</exists>
-      <size>5518349</size>
+      <size>21082112</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -1401,24 +1384,7 @@
     <datafile>
       <name>play_2.ogg</name>
       <exists>-1</exists>
-      <size>4075041</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_2.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_2.ogg</name>
-      <exists>-1</exists>
-      <size>3329195</size>
+      <size>11816960</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -1435,24 +1401,7 @@
     <datafile>
       <name>play_3.ogg</name>
       <exists>-1</exists>
-      <size>2790481</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_3.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_3.ogg</name>
-      <exists>-1</exists>
-      <size>4747087</size>
+      <size>45957120</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -1469,24 +1418,7 @@
     <datafile>
       <name>play_4.ogg</name>
       <exists>-1</exists>
-      <size>2780714</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_4.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_4.ogg</name>
-      <exists>-1</exists>
-      <size>6892185</size>
+      <size>20201472</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -1503,24 +1435,7 @@
     <datafile>
       <name>play_5.ogg</name>
       <exists>-1</exists>
-      <size>5043326</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_5.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_5.ogg</name>
-      <exists>-1</exists>
-      <size>6441363</size>
+      <size>26292224</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -1537,7 +1452,7 @@
     <datafile>
       <name>play_6.ogg</name>
       <exists>-1</exists>
-      <size>2672367</size>
+      <size>14872576</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -1550,40 +1465,6 @@
         </Config>
       </ConfigOptions>
       <filename>play_6.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_6.ogg</name>
-      <exists>-1</exists>
-      <size>5518693</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_6.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_7.ogg</name>
-      <exists>-1</exists>
-      <size>1174159</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_7.ogg</filename>
     </datafile>
     <datafile>
       <name>play_7.ogg</name>
@@ -1928,24 +1809,7 @@
     <datafile>
       <name>play_17.ogg</name>
       <exists>-1</exists>
-      <size>1904622</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename>play_17.ogg</filename>
-    </datafile>
-    <datafile>
-      <name>play_17.ogg</name>
-      <exists>-1</exists>
-      <size>3516516</size>
+      <size>53664322</size>
       <exportAction>2</exportAction>
       <exportDir></exportDir>
       <overwrite>0</overwrite>
@@ -2401,6 +2265,23 @@
       </ConfigOptions>
       <filename>discrpc.dll</filename>
     </datafile>
+    <datafile>
+      <name>shine.ogg</name>
+      <exists>-1</exists>
+      <size>98748</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename>shine.ogg</filename>
+    </datafile>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
@@ -2540,6 +2421,7 @@
       <sound>sound\snd_yoshicoin</sound>
       <sound>sound\snd_door_unlock</sound>
       <sound>sound\snd_door_locked</sound>
+      <sound>sound\snd_shine</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -2890,6 +2772,7 @@
           <sprite>sprites\spr_bowserstatue</sprite>
           <sprite>sprites\spr_bowserstatue_fire</sprite>
           <sprite>sprites\spr_bowserstatue_gold</sprite>
+          <sprite>sprites\spr_thwimp</sprite>
         </sprites>
         <sprites name="Airship">
           <sprite>sprites\spr_bobomb</sprite>
@@ -3040,6 +2923,7 @@
         <sprite>sprites\spr_mask32x16</sprite>
         <sprite>sprites\spr_mask32x32</sprite>
         <sprite>sprites\spr_mask64x64</sprite>
+        <sprite>sprites\spr_24x24</sprite>
         <sprite>sprites\spr_linemask</sprite>
         <sprite>sprites\spr_stopblock</sprite>
         <sprite>sprites\spr_24mask</sprite>
@@ -3107,6 +2991,7 @@
         <sprite>sprites\spr_smw_goalgate</sprite>
         <sprite>sprites\spr_smw_goaltape</sprite>
         <sprite>sprites\spr_smw_goaltape_get</sprite>
+        <sprite>sprites\spr_shine</sprite>
       </sprites>
       <sprites name="Warp">
         <sprite>sprites\spr_door</sprite>
@@ -3325,6 +3210,8 @@
             <sprite>sprites\spr_uni_demo_46</sprite>
             <sprite>sprites\spr_uni_demo_47</sprite>
             <sprite>sprites\spr_uni_demo_48</sprite>
+            <sprite>sprites\spr_uni_demo_48_1</sprite>
+            <sprite>sprites\spr_uni_demo_48_2</sprite>
             <sprite>sprites\spr_uni_demo_49</sprite>
             <sprite>sprites\spr_uni_demo_49_1</sprite>
             <sprite>sprites\spr_uni_demo_50</sprite>
@@ -3444,6 +3331,7 @@
           <sprite>sprites\spr_uni_flagpole</sprite>
           <sprite>sprites\spr_uni_startsing</sprite>
           <sprite>sprites\spr_uni_goalgate</sprite>
+          <sprite>sprites\spr_uni_shine</sprite>
           <sprites name="Door">
             <sprite>sprites\spr_uni_demo_93_spawn</sprite>
             <sprite>sprites\spr_uni_demo_93_1</sprite>
@@ -3886,6 +3774,8 @@
         <object>objects\obj_firebar_block</object>
         <object>objects\obj_bowserstatue</object>
         <object>objects\obj_bowserstatue_gold</object>
+        <object>objects\obj_thwimp</object>
+        <object>objects\obj_thwimp_2</object>
       </objects>
       <objects name="Collision">
         <object>objects\obj_solid</object>
@@ -3928,6 +3818,7 @@
         <object>objects\obj_smw_goalgate_2</object>
         <object>objects\obj_smw_goaltape</object>
         <object>objects\obj_smw_goaltape_get</object>
+        <object>objects\obj_shine</object>
       </objects>
       <objects name="Effects">
         <object>objects\obj_score</object>
@@ -3938,6 +3829,7 @@
         <object>objects\obj_bubble</object>
         <object>objects\obj_starman_trail</object>
         <object>objects\obj_sparkletrail</object>
+        <object>objects\obj_sparkletrail2</object>
         <object>objects\obj_superball_trail</object>
       </objects>
       <objects name="Parents">
@@ -4390,6 +4282,8 @@
             <object>objects\obj_uni_demo_46</object>
             <object>objects\obj_uni_demo_47</object>
             <object>objects\obj_uni_demo_48</object>
+            <object>objects\obj_uni_demo_48_1</object>
+            <object>objects\obj_uni_demo_48_2</object>
             <object>objects\obj_uni_demo_49</object>
             <object>objects\obj_uni_demo_49_1</object>
             <object>objects\obj_uni_demo_50</object>
@@ -4545,6 +4439,7 @@
           <object>objects\obj_uni_startsing</object>
           <object>objects\obj_uni_flagpole</object>
           <object>objects\obj_uni_goalgate</object>
+          <object>objects\obj_uni_shine</object>
         </objects>
         <objects name="System">
           <objects name="Effects">

@@ -186,10 +186,10 @@ objects[150] = obj_uni_demo_90_2;
 objects[151] = obj_uni_demo_91_1;
 objects[152] = obj_uni_demo_91_2;
 objects[153] = obj_uni_goalgate;
-objects[154] = obj_uni_demo_91_2;
-objects[155] = obj_uni_demo_91_2;
-objects[156] = obj_uni_demo_91_2;
-objects[157] = obj_uni_demo_91_2;
+objects[154] = obj_uni_demo_92_1;
+objects[155] = obj_uni_demo_92_2;
+objects[156] = obj_uni_demo_92_3;
+objects[157] = obj_uni_demo_92_4;
 objects[158] = obj_uni_demo_item_93_1_1;
 objects[159] = obj_uni_demo_item_93_1_2;
 objects[160] = obj_uni_demo_item_93_2_1;
@@ -235,9 +235,13 @@ objects[199] = obj_uni_demo_102_1;
 objects[200] = obj_uni_demo_102_2;
 objects[201] = obj_uni_demo_103_1;
 objects[202] = obj_uni_demo_103_2;
+objects[203] = obj_uni_demo_48_1;
+objects[204] = obj_uni_demo_48_2;
+objects[205] = obj_uni_demo_49_1;
+objects[206] = obj_uni_shine;
 
 //Total para ser salvo
-total_objects = 203;
+total_objects = 207;
 </string>
           </argument>
         </arguments>
@@ -288,7 +292,7 @@ global.uni_instance_deactivate = true;
             <string>///CARREGAR ARQUIVO
 
 //Reconhecimento de formato
-fname = get_open_filename("UniMaker 1.S/1.0 Course|*.unis;*.uni","");  
+fname = get_open_filename("SMW: STUDIO and UniMaker 1.S/1.0 Course|*.smws;*.unis;*.uni","");  
 
 //Se foi carregado algum arquivo
 if(fname!=""){
@@ -314,6 +318,15 @@ if(fname!=""){
         scr_uni_custom(fname,0);
     }
     
+    if(filename_ext(fname) == ".smws"){
+    
+        //SMW: Studio
+        audio_stop_all();
+        scr_uni_loadcopy(fname);
+        scr_uni_level_load(fname);
+        scr_uni_custom(fname,0);
+        }
+        
     //Limpar memória
     cleanmem();    
     
@@ -358,7 +371,7 @@ alarm[2] = 2;
             <string>///SALVAR ARQUIVO
 
 //Reconhecimento de formato
-fname = get_save_filename("UniMaker 1.S Course |*.unis","");
+fname = get_save_filename("SMW: Studio Course |*.smws","");
 
 //Se foi salvo em algum arquivo
 if(fname != ""){

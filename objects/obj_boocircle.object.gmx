@@ -38,10 +38,7 @@ sprout = 1000;
 */
 
 //Default Value:
-if place_snapped(32,16)
     ready = 1
-else
-    ready = -1
     
 alarm[0] = 2;
 </string>

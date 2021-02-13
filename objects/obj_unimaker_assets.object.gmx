@@ -123,6 +123,7 @@ instance_destroy();
             <kind>1</kind>
             <string>///Parar todos os audios
 audio_stop_all();
+audio_stop_sound(snd_shine)
 </string>
           </argument>
         </arguments>

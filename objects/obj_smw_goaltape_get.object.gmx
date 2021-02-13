@@ -28,9 +28,9 @@
             <string>image_speed = 0;
 image_index = 0;
 vspeed = -3.2;
-if(instance_exists(obj_goalmario)){
+if(instance_exists(obj_gatemario)){
 
-    if(obj_goalmario.x &lt; x)
+    if(obj_gatemario.x &lt; x)
         hspeed = +1;
     else
         hspeed = -1;

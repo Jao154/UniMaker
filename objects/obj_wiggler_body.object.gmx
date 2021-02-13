@@ -127,8 +127,7 @@ if direct = nextdirect
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Floor collisions
-event_user(4)
+            <string>event_user(4)
 </string>
           </argument>
         </arguments>

@@ -340,7 +340,8 @@ if bbox_top &gt; room_height
     //Play Bowser death sound
     audio_playstop_sound(snd_bowserfall,0,0)
     instance_activate_object(obj_endboss);
-    with obj_endboss alarm[0] = 1
+    with obj_endboss alarm[0] = 1;
+    
 }
 }
 </string>

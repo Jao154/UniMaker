@@ -79,8 +79,7 @@ else
           <argument>
             <kind>1</kind>
             <string>///Hurt Mario
-if(other.sprite_index != spr_mario_shell_duck)
-&amp;&amp;(other.sprite_index != spr_statue){
+if(other.sprite_index != spr_mario_shell_duck){
 with other event_user(0)
 };
 </string>

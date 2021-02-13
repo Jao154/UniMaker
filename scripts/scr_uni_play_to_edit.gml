@@ -4,6 +4,7 @@ global.checkpoint = 0;
 with(obj_castleend) instance_destroy();
 with(obj_flagpole) instance_destroy(); with(obj_flag) instance_destroy(); instance_activate_object(obj_uni_flagpole);
 with(obj_smw_goalgate_2) instance_destroy(); with(obj_smw_goalgate) instance_destroy(); with(obj_smw_goaltape) instance_destroy(); with(obj_smw_goaltape_get) instance_destroy(); instance_activate_object(obj_uni_goalgate);
+with(obj_shine) instance_destroy(); instance_activate_object(obj_uni_shine);
 with(obj_uni_autoscroll) instance_destroy();
 with(obj_uni_classicscroll) instance_destroy();
 with(obj_checkpoint) instance_destroy();
@@ -33,7 +34,6 @@ with(obj_rain) instance_destroy();
 with(obj_windleaf) instance_destroy();
 with(obj_cinder) instance_destroy();
 with(obj_sandstorm) instance_destroy();
-
 with(obj_veggiecoin) instance_destroy();
 with(obj_10coinJ) instance_destroy();
 with(obj_30coinJ) instance_destroy();
@@ -55,7 +55,6 @@ with(obj_climb) instance_destroy();;
 with(obj_hurtsolid) instance_destroy();
 with(obj_hurtsolid2) instance_destroy();
 with(obj_slopeparent) instance_destroy();
-
 with(obj_physicsparent) instance_destroy();
 with(obj_powerupparent) instance_destroy();
 with(obj_enemyparent) instance_destroy();
@@ -118,6 +117,8 @@ with(obj_porchupuffer) instance_destroy(); instance_activate_object(obj_uni_demo
 with(obj_podoboo) instance_destroy(); instance_activate_object(obj_uni_demo_46);
 with(obj_drybones) instance_destroy(); instance_activate_object(obj_uni_demo_47);
 with(obj_thwomp) instance_destroy(); instance_activate_object(obj_uni_demo_48);
+with(obj_thwimp) instance_destroy(); instance_activate_object(obj_uni_demo_48_1);
+with(obj_thwimp_2) instance_destroy(); instance_activate_object(obj_uni_demo_48_2);
 with(obj_boo) instance_destroy(); instance_activate_object(obj_uni_demo_49);
 with(obj_boocircle) instance_destroy(); instance_activate_object(obj_uni_demo_49_1);
 with(obj_bobomb) instance_destroy(); instance_activate_object(obj_uni_demo_50);

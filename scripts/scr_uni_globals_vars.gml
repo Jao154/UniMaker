@@ -115,3 +115,4 @@ global.uni_musicpack[69] = audio_create_stream(global.game_directory+"tb_mdn2.og
 global.uni_musicpack[70] = audio_create_stream(global.game_directory+"tb_smb1.ogg");
 global.uni_musicpack[71] = audio_create_stream(global.game_directory+"tb_smb3.ogg");
 global.uni_musicpack[72] = audio_create_stream(global.game_directory+"tb_smw.ogg");
+global.uni_musicpack[73] = audio_create_stream(global.game_directory+"shine.ogg");

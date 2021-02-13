@@ -38,14 +38,12 @@ audio_stop_sound(global.uni_musicpack[64]) //Boss Clear
 audio_stop_sound(global.uni_musicpack[54]) //Super Star
 audio_stop_sound(global.uni_musicpack[55]) //P-Switch
 
-exception = 1;
-effect_blend = c_white;
+//Forget checkpoints
+global.checkpoint = noone
 
 sprite_index = scr_mariowalk();
 
 //Use small mask for small Mario
-if global.powerup = cs_small
-    mask_index = spr_smallmask
 
 //Goal Mario's state
 ready = 0

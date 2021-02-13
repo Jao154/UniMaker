@@ -106,7 +106,7 @@ if visible = 1
         audio_stop_sound(global.uni_musicpack[55]) //P-Switch
         //Dissapear
         visible = 0
-        instance_create(x,y,obj_smoke)
+        instance_create(x,y,obj_sparkletrail)
 
         //Boss clear music
         audio_play_sound(global.uni_musicpack[64],1,0)
