@@ -43,7 +43,7 @@ image_speed = 0.15
 hspeed = -0.5
 
 //Move back and forth
-alarm[0] = 70
+alarm[0] = 50
 
 //Jump
 alarm[1] = 150
@@ -240,7 +240,7 @@ alarm[1] = 150
             <kind>1</kind>
             <string>///Move back and forth
 hspeed = -hspeed
-alarm[0] = 70
+alarm[0] = 50
 </string>
           </argument>
         </arguments>
@@ -264,7 +264,7 @@ alarm[0] = 70
           <argument>
             <kind>1</kind>
             <string>///Bro logic
-
+event_user(3)
 //Floor collisions if he is not jumping through
 if throughsolid = 0
     event_user(4)

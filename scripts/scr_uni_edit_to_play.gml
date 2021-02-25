@@ -214,6 +214,12 @@ with(obj_uni_demo_102_1){with(instance_create(x,y,obj_firebar_block)) direct = -
 with(obj_uni_demo_102_2){with(instance_create(x,y,obj_firebar_block)) direct = 1; visible = false;};
 with(obj_uni_demo_103_1){visible = 0; instance_create(x,y,obj_bowserstatue);}
 with(obj_uni_demo_103_2){visible = 0; instance_create(x,y,obj_bowserstatue_gold);}
+with(obj_uni_demo_104){visible = 0; instance_create(x,y,obj_sumobro);}
+with(obj_uni_demo_105){visible = 0; instance_create(x,y,obj_platformspin);}
+with(obj_uni_demo_106_1){visible = 0; instance_create(x,y,obj_walltriangle_r);}
+with(obj_uni_demo_106_2){visible = 0; instance_create(x,y,obj_walltriangle_ir);}
+with(obj_uni_demo_106_3){visible = 0; instance_create(x,y,obj_walltriangle_l);}
+with(obj_uni_demo_106_4){visible = 0; instance_create(x,y,obj_walltriangle_il);}
 
 //Portas
 with(obj_uni_demo_item_93_1_1){visible = 0; instance_create(x,y,obj_door_1_1);}

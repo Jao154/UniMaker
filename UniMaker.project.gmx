@@ -2783,14 +2783,26 @@
           <sprite>sprites\spr_cannonball</sprite>
           <sprite>sprites\spr_engineblock_h</sprite>
           <sprite>sprites\spr_engineblock_v</sprite>
-          <sprite>sprites\spr_engine_start</sprite>
-          <sprite>sprites\spr_engine</sprite>
-          <sprite>sprites\spr_engine2_start</sprite>
-          <sprite>sprites\spr_engine2</sprite>
-          <sprite>sprites\spr_vengine_start</sprite>
-          <sprite>sprites\spr_vengine</sprite>
-          <sprite>sprites\spr_vengine2_start</sprite>
-          <sprite>sprites\spr_vengine2</sprite>
+          <sprites name="Burner">
+            <sprite>sprites\spr_engine_start</sprite>
+            <sprite>sprites\spr_engine</sprite>
+            <sprite>sprites\spr_engine2_start</sprite>
+            <sprite>sprites\spr_engine2</sprite>
+            <sprite>sprites\spr_vengine_start</sprite>
+            <sprite>sprites\spr_vengine</sprite>
+            <sprite>sprites\spr_vengine2</sprite>
+            <sprite>sprites\spr_vengine2_start</sprite>
+          </sprites>
+          <sprites name="Super Burner">
+            <sprite>sprites\spr_supergine_start</sprite>
+            <sprite>sprites\spr_supergine</sprite>
+            <sprite>sprites\spr_supergine2_start</sprite>
+            <sprite>sprites\spr_supergine2</sprite>
+            <sprite>sprites\spr_vsupergine_start</sprite>
+            <sprite>sprites\spr_vsupergine</sprite>
+            <sprite>sprites\spr_vsupergine2_start</sprite>
+            <sprite>sprites\spr_vsupergine2</sprite>
+          </sprites>
         </sprites>
         <sprites name="Boss">
           <sprite>sprites\spr_bowser_walk</sprite>
@@ -2816,6 +2828,10 @@
         <sprite>sprites\spr_firebro_spit</sprite>
         <sprite>sprites\spr_boomerangbro</sprite>
         <sprite>sprites\spr_boomerangbro_throw</sprite>
+        <sprite>sprites\spr_sumobro</sprite>
+        <sprite>sprites\spr_sumobro_stomp</sprite>
+        <sprite>sprites\spr_lightning</sprite>
+        <sprite>sprites\spr_sumoflame</sprite>
       </sprites>
       <sprites name="Items">
         <sprites name="Powerups">
@@ -2867,6 +2883,11 @@
           <sprite>sprites\spr_donut_red</sprite>
           <sprite>sprites\spr_arrowplatform</sprite>
           <sprite>sprites\spr_expandblock</sprite>
+          <sprite>sprites\spr_platformspin</sprite>
+          <sprite>sprites\spr_walltriangle_r</sprite>
+          <sprite>sprites\spr_walltriangle_ir</sprite>
+          <sprite>sprites\spr_walltriangle_l</sprite>
+          <sprite>sprites\spr_walltriangle_il</sprite>
         </sprites>
         <sprites name="Collectables">
           <sprite>sprites\spr_coin</sprite>
@@ -3298,6 +3319,12 @@
             <sprite>sprites\spr_uni_demo_102_2</sprite>
             <sprite>sprites\spr_uni_demo_103_1</sprite>
             <sprite>sprites\spr_uni_demo_103_2</sprite>
+            <sprite>sprites\spr_uni_demo_104</sprite>
+            <sprite>sprites\spr_uni_demo_105</sprite>
+            <sprite>sprites\spr_uni_demo_106_1</sprite>
+            <sprite>sprites\spr_uni_demo_106_2</sprite>
+            <sprite>sprites\spr_uni_demo_106_3</sprite>
+            <sprite>sprites\spr_uni_demo_106_4</sprite>
           </sprites>
           <sprites name="Others">
             <sprite>sprites\spr_uni_blockpreview</sprite>
@@ -3533,6 +3560,7 @@
         <object>objects\obj_spinner</object>
         <object>objects\obj_castleend</object>
         <object>objects\obj_slider</object>
+        <object>objects\obj_wallrunner</object>
       </objects>
       <objects name="Items">
         <objects name="Effect">
@@ -3625,10 +3653,19 @@
           <object>objects\obj_ppoutline</object>
           <object>objects\obj_icecoin</object>
         </objects>
-        <object>objects\obj_platform_moving</object>
-        <object>objects\obj_platform_automoving</object>
-        <object>objects\obj_platform_touch</object>
-        <object>objects\obj_platform_falling</object>
+        <objects name="Platforms">
+          <object>objects\obj_platform_moving</object>
+          <object>objects\obj_platform_automoving</object>
+          <object>objects\obj_platform_touch</object>
+          <object>objects\obj_platform_falling</object>
+          <object>objects\obj_platformspin</object>
+        </objects>
+        <objects name="Wall Triangle">
+          <object>objects\obj_walltriangle_r</object>
+          <object>objects\obj_walltriangle_ir</object>
+          <object>objects\obj_walltriangle_il</object>
+          <object>objects\obj_walltriangle_l</object>
+        </objects>
         <object>objects\obj_yoshiplatform_green</object>
         <object>objects\obj_yoshiplatform_red</object>
         <object>objects\obj_yoshiplatform_yellow</object>
@@ -3705,6 +3742,8 @@
           <object>objects\obj_firebar</object>
           <object>objects\obj_firebarball</object>
           <object>objects\obj_bowserstatue_fire_real</object>
+          <object>objects\obj_lightning</object>
+          <object>objects\obj_sumoflame</object>
         </objects>
         <object>objects\obj_goomba</object>
         <object>objects\obj_roundgoomba</object>
@@ -3776,6 +3815,7 @@
         <object>objects\obj_bowserstatue_gold</object>
         <object>objects\obj_thwimp</object>
         <object>objects\obj_thwimp_2</object>
+        <object>objects\obj_sumobro</object>
       </objects>
       <objects name="Collision">
         <object>objects\obj_solid</object>
@@ -4119,6 +4159,9 @@
                 <object>objects\obj_uni_layout_demoresources_100</object>
                 <object>objects\obj_uni_layout_demoresources_101</object>
                 <object>objects\obj_uni_layout_demoresources_102</object>
+                <object>objects\obj_uni_layout_demoresources_103</object>
+                <object>objects\obj_uni_layout_demoresources_104</object>
+                <object>objects\obj_uni_layout_demoresources_105</object>
               </objects>
               <object>objects\obj_uni_layout_demoresources_back</object>
               <object>objects\obj_uni_layout_demoresources_close</object>
@@ -4370,6 +4413,12 @@
             <object>objects\obj_uni_demo_102_2</object>
             <object>objects\obj_uni_demo_103_1</object>
             <object>objects\obj_uni_demo_103_2</object>
+            <object>objects\obj_uni_demo_104</object>
+            <object>objects\obj_uni_demo_105</object>
+            <object>objects\obj_uni_demo_106_1</object>
+            <object>objects\obj_uni_demo_106_2</object>
+            <object>objects\obj_uni_demo_106_3</object>
+            <object>objects\obj_uni_demo_106_4</object>
             <objects name="Door">
               <object>objects\obj_uni_demo_93_spawn</object>
               <object>objects\obj_uni_demo_item_93_1_1</object>

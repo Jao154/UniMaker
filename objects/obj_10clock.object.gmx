@@ -123,36 +123,6 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_gatemario">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Collect the coin
-
-//Create sparkles
-with(instance_create(x+8,y-2,obj_sparkletrail))
-image_blend = c_aqua;
-
-//Play the coin sound
-audio_playstop_sound(sfx_1up,0,0)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_mario">
       <action>
         <libid>1</libid>

@@ -3,9 +3,9 @@
   <spriteName>spr_mario_big_goal</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-3</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_physicsparent</parentName>
   <maskName>spr_bigmask</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -19,7 +19,7 @@
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
@@ -44,6 +44,8 @@ global.checkpoint = noone
 sprite_index = scr_mariowalk();
 
 //Use small mask for small Mario
+if global.powerup = cs_small
+    mask_index = spr_smallmask
 
 //Goal Mario's state
 ready = 0
@@ -75,7 +77,7 @@ alarm[0] = 2;
             <kind>1</kind>
             <string>///Return to the world map after the music is done playing
 if audio_is_playing(global.uni_musicpack[60]) //Course Clear
-     alarm[3] = 1
+    alarm[3] = 1
 else{
         if(global.uni_mode == 0){        
             with(obj_uni_layout_play)
@@ -118,7 +120,7 @@ if global.timer = 0
     audio_play_sound(snd_countend,0,0)
 
     //Return to the world map
-    alarm[4] = 1
+    alarm[3] = 1
 
 }
 
@@ -173,18 +175,28 @@ else
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>self</whoName>
+        <whoName>other</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Fade into the castle
-if image_alpha &gt; 0
-{
-    image_alpha -= 0.05
-    alarm[1] = 1
-}
+            <string>///Start walking
+
+//Physics state
+ready = 2;
+
+//Face right
+image_xscale = 1
+
+//Jump rightwards - Se for por Flag Pole
+hspeed = 1
+
+if!(place_meeting(x,y,obj_swim))
+vspeed = -3;
+
+//Animate
+image_speed = 0.53;
 </string>
           </argument>
         </arguments>
@@ -209,6 +221,7 @@ if image_alpha &gt; 0
             <kind>1</kind>
             <string>//Play the flagpole music
 audio_play_sound(global.uni_musicpack[60],1,0) //Course Clear
+alarm[3] = 2;
 
 ///WALK after land
 if(type == 1){
@@ -229,9 +242,13 @@ else{
     vspeed = 1.5
     
     //Start walking after reaching the bottom
-    alarm[1] = 1
+    alarm[1] = 130
     
-    }
+    //Play the flagpole sound
+    audio_play_sound(global.uni_musicpack[60],1,0) //Course Clear
+    
+    alarm[3] = 2;
+};
 </string>
           </argument>
         </arguments>
@@ -256,13 +273,12 @@ else{
             <kind>1</kind>
             <string>///Goal Mario logic
 
-//Destroy all enemies
-with obj_enemyparent
-{
-    with(instance_create(x,y,obj_smoke)) sprite_index = spr_statuesmoke
-    instance_destroy()
-}
-
+//Use small mask for small Mario
+    if global.powerup = cs_small
+        mask_index = spr_smallmask
+    else
+        mask_index = spr_bigmask
+    
 //When in the physics or countdown state
 if ready = 2
 or ready = 3
@@ -277,13 +293,8 @@ or ready = 3
         visible = 0
     }
 
-///Default step script
-
-//Wall collisions
-event_user(3)
-
-//Floor collisions
-event_user(4)
+    //Default event
+    event_inherited()
 
     //If Mario reached a wall or fell out of the room when in the physics state
     if ready = 2
@@ -293,33 +304,32 @@ event_user(4)
         //Countdown state
         ready = 3
 
-        //Begin countdown state
-        event_user(15)
-
         //Stop walking
         hspeed = 0
-        image_speed = 0;
         image_index = 0;
+        sprite_index = scr_mariowalk();
 
     }
 
     //When on the ground, use walking sprite
-    if gravity = 0{
-        sprite_index = scr_mariowalk()
-        image_speed = 0.25+abs(hspeed)/7.5; //&lt; hspeed/10
+    if gravity = 0
+    {
+        if(hspeed == 0)
+            sprite_index = scr_mariowalk();     
     };
+
     //Otherwise
     else
     {
 
         //Use the jump sprite
-        sprite_index = scr_mariojump();
+        sprite_index = scr_mariojump()
         if (vspeed &lt; 0)
         image_index = 0;
         else
         image_index = 1;
-        
-        }
+
+    }
     
     if(type == 1)
     &amp;&amp;(type_start == 0){
@@ -346,7 +356,7 @@ if(hspeed = 0)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_castleend">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -363,182 +373,7 @@ if(hspeed = 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>visible = 0;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="25">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Begin countdown state
-
-//Start the countdown if there is a time limit
-if global.timer &gt; 0
-    alarm[2] = 1
-else
-    alarm[3] = 1
-
-//Do not animate
-image_speed = 0
-
-//Use the correct image index
-image_index = 0
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="14">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Default floor/ceiling collisions
-
-//When moving down
-if vspeed &gt; 0
-{
-
-    //Check for a solidtop below
-    var solidtop = collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_bottom+vspeed,obj_solidtop,0,0)
-
-    //Handle solidtop collisions
-    if solidtop
-    and bbox_bottom &lt; solidtop.yprevious+5
-        y = solidtop.y+floor(y-bbox_bottom-0.9)
-    
-    //Cap fall speed
-    if(place_meeting(x,y,obj_swim)){
-    
-        if(vspeed &gt; 0.85)
-            vspeed = 0.85;
-        if(hspeed &lt; -0.5)
-            hspeed = -0.5;
-        if(hspeed &gt; 0.5)
-            hspeed = 0.5;
-    };
-    else{
-    
-        if(sprite_get_width(sprite_index) &gt; 16)
-        ||(sprite_get_height(sprite_index) &gt; 16){
-        
-            if vspeed &gt; 4.5
-                vspeed = 4.5;
-        };
-        else{
-            if vspeed &gt; 4
-                vspeed = 4;        
-        };
-    };
-}
-
-//Embed into the slope to ensure correct slope mechanics
-if collision_rectangle(bbox_left,bbox_bottom,bbox_right,bbox_bottom+4,obj_slopeparent,1,0)
-and not collision_rectangle(bbox_left,bbox_bottom-4,bbox_right,bbox_bottom-4,obj_slopeparent,1,0)
-and vspeed = 0
-    y+=4
-
-    
-///Handle slope collisions
-if collision_rectangle(bbox_left,bbox_bottom-4,bbox_right,bbox_bottom,obj_slopeparent,1,0)
-and not collision_rectangle(bbox_left,bbox_bottom-8,bbox_right,bbox_bottom-8,obj_slopeparent,1,0)
-{
-    while collision_rectangle(bbox_left,bbox_bottom-4,bbox_right,bbox_bottom,obj_slopeparent,1,0)
-        y--
-}
-
-//Check for floor objects
-if (collision_rectangle(bbox_left,bbox_bottom+1,bbox_right,bbox_bottom+1,obj_solidtop,0,0)
-and not collision_rectangle(bbox_left,bbox_bottom-4,bbox_right,bbox_bottom-4,obj_solidtop,0,0))
-or collision_rectangle(bbox_left,bbox_bottom+1,bbox_right,bbox_bottom+1,obj_slopeparent,1,0)
-{
-    gravity = 0;
-    if vspeed &gt; 0
-        vspeed = 0;
-}
-//////////CORREÇÃO//////////
-else{
-
-    if(place_meeting(x,y,obj_swim))
-        gravity = 0.05;
-    else
-        gravity = 0.25;
-};
-/////////////////////////////
-
-//Ceiling check
-if vspeed &lt; 0
-and collision_rectangle(bbox_left+1,bbox_top+vspeed-1,bbox_right-1,bbox_top-1,obj_solid,1,0)
-{
-    while collision_rectangle(bbox_left+1,bbox_top,bbox_right-1,bbox_top,obj_solid,1,0)
-        y++;
-    vspeed = 0;
-}
-
-//Destroy when it falls out of the level
-if bbox_top &gt; room_height
-    instance_destroy();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="13">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Default wall collisions
-if (hspeed &gt; 0 and collision_rectangle(bbox_right,bbox_top+1,bbox_right+1,bbox_bottom-4,obj_solid,0,0))
-or (hspeed &lt; 0 and collision_rectangle(bbox_left-1,bbox_top+1,bbox_left,bbox_bottom-4,obj_solid,0,0))
-{
-    hspeed = -hspeed
-    while collision_rectangle(bbox_right,bbox_top+4,bbox_right,bbox_bottom-4,obj_solid,1,0)
-        x--
-    while collision_rectangle(bbox_left,bbox_top+4,bbox_left,bbox_bottom-4,obj_solid,1,0)
-        x++
-}
-
+            <string>draw_sprite_ext(sprite_index,image_index,round(x),round(y),image_xscale,1,0,c_white,image_alpha);
 </string>
           </argument>
         </arguments>

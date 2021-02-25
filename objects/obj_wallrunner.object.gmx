@@ -326,7 +326,7 @@ else if speed &gt; 3
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_walltriangle_il">
+    <event eventtype="4" ename="obj_walltriangle_r">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -343,22 +343,12 @@ else if speed &gt; 3
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make Mario run from the ceiling to the left wall
-if direct = 1
-and direction = 180
+            <string>///Make Mario run from the right wall to the ground
+if direct = -1
+and direction = 270
 {
-    x = other.x+16
-    y = other.y+16
-    direction = 270
-}
-
-//Make Mario run from the left wall to the ceiling
-else if direct = -1
-and direction = 90
-{
-    x = other.x+32
-    y = other.y
-    direction = 0
+    obj_mario.hspeed = -speed
+    instance_destroy()
 }
 </string>
           </argument>
@@ -433,7 +423,7 @@ and direction = 0
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_walltriangle_r">
+    <event eventtype="4" ename="obj_walltriangle_il">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -450,12 +440,22 @@ and direction = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Make Mario run from the right wall to the ground
-if direct = -1
-and direction = 270
+            <string>///Make Mario run from the ceiling to the left wall
+if direct = 1
+and direction = 180
 {
-    obj_mario.hspeed = -speed
-    instance_destroy()
+    x = other.x+16
+    y = other.y+16
+    direction = 270
+}
+
+//Make Mario run from the left wall to the ceiling
+else if direct = -1
+and direction = 90
+{
+    x = other.x+32
+    y = other.y
+    direction = 0
 }
 </string>
           </argument>

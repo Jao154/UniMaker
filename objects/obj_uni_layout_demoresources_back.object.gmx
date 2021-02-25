@@ -232,6 +232,9 @@ instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_99)
 instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_100);
 instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_101);
 instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_102);
+instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_103);
+instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_104);
+instance_create(view_xview[0]+0,view_yview[0]+0,obj_uni_layout_demoresources_105);
 </string>
           </argument>
         </arguments>
@@ -357,6 +360,9 @@ with (obj_uni_layout_demoresources_99) instance_destroy();
 with (obj_uni_layout_demoresources_100) instance_destroy();
 with (obj_uni_layout_demoresources_101) instance_destroy();
 with (obj_uni_layout_demoresources_102) instance_destroy();
+with (obj_uni_layout_demoresources_103) instance_destroy();
+with (obj_uni_layout_demoresources_104) instance_destroy();
+with (obj_uni_layout_demoresources_105) instance_destroy();
 
 //Destruir "Close"
 with (obj_uni_layout_demoresources_close)instance_destroy();

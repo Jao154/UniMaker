@@ -47,6 +47,7 @@ with(obj_starman_trail) instance_destroy();
 with(obj_superball_trail) instance_destroy();
 with(obj_uni_start) instance_destroy();
 with(obj_modelbgo) instance_destroy();
+with(obj_sumoflame) instance_destroy();
 //------------ Colisões ------------
 with(obj_solid) instance_destroy();
 with(obj_solidtop) instance_destroy();
@@ -193,6 +194,12 @@ with(obj_firebar_block) instance_destroy(); instance_activate_object(obj_uni_dem
 with(obj_firebar_block) instance_destroy(); instance_activate_object(obj_uni_demo_102_2); with(obj_firebar) instance_destroy(); with(obj_firebarball) instance_destroy();
 with(obj_bowserstatue) instance_destroy(); instance_activate_object(obj_uni_demo_103_1);
 with(obj_bowserstatue_gold) instance_destroy(); instance_activate_object(obj_uni_demo_103_2); with(obj_bowserstatue_fire_real) instance_destroy(); 
+with(obj_sumobro) instance_destroy(); instance_activate_object(obj_uni_demo_104);
+with(obj_platformspin) instance_destroy(); instance_activate_object(obj_uni_demo_105);
+with(obj_walltriangle_r) instance_destroy(); instance_activate_object(obj_uni_demo_106_1);
+with(obj_walltriangle_ir) instance_destroy(); instance_activate_object(obj_uni_demo_106_2);
+with(obj_walltriangle_l) instance_destroy(); instance_activate_object(obj_uni_demo_106_3);
+with(obj_walltriangle_il) instance_destroy(); instance_activate_object(obj_uni_demo_106_4);
 
 //Portas
 with(obj_door_1_1) instance_destroy(); instance_activate_object(obj_uni_demo_item_93_1_1);
