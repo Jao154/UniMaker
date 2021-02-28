@@ -239,9 +239,15 @@ objects[203] = obj_uni_demo_48_1;
 objects[204] = obj_uni_demo_48_2;
 objects[205] = obj_uni_demo_49_1;
 objects[206] = obj_uni_shine;
+objects[207] = obj_uni_demo_104
+objects[208] = obj_uni_demo_105;
+objects[209] = obj_uni_demo_106_1;
+objects[210] = obj_uni_demo_106_2;
+objects[211] = obj_uni_demo_106_3;
+objects[212] = obj_uni_demo_106_4;
 
 //Total para ser salvo
-total_objects = 207;
+total_objects = 213;
 </string>
           </argument>
         </arguments>
